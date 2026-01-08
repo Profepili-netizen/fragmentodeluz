@@ -1,0 +1,8 @@
+/* void.css */
+body {
+  background-image: url('Void.jpg');
+}
+
+.content-box {
+  background-color: rgba(40, 40, 40, 0.6);
+}

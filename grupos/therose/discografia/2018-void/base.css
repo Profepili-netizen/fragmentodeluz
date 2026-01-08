@@ -1,0 +1,126 @@
+/* base.css — Estilo general para todos los álbumes */
+
+body {
+  font-family: 'Lora', serif;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #121212;
+  color: #e8e8e8;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between; /* mantiene título y links a los costados */
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 3.8em;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+h2 {
+  color: #f5f5f5;
+}
+
+.spotify-link {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.spotify-link:hover {
+  color: #e0e0e0
+}
+
+.content-box {
+  width: 80%;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.album-description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  text-align: justify;
+}
+
+.song-list {
+  text-align: center;
+  font-style: italic;
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.song-list ul {
+  list-style: none;        /* Quita los puntos */
+  padding: 0;              /* Limpia margen interno */
+  margin: 0 auto;          /* Centra la lista */
+}
+
+.song-list li {
+  margin: 0.5rem 0;        /* Espacio entre canciones */
+}
+
+.song-list a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.3em;
+
+  transition: all 0.3s ease;
+}
+
+.song-list a:hover {
+  transform: scale(1.15);
+  color: #f5f5f5;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 2px solid #000;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #f0f0f0;
+  line-height: 1.4;
+  z-index: 5;
+  display: block;   
+}
+
+footer p {
+  display: block;
+  margin: 4px 0;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: #f0f0f0;
+}

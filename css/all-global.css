@@ -1,0 +1,228 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* -----------------------------MENÚ DESPLEGABLE----------------------------- */
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 200px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+}
+
+.menu-desplegable.visible {
+    display: block;
+}
+
+.menu-desplegable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-desplegable li {
+    margin: 15px 0;
+}
+
+.menu-desplegable a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.menu-desplegable a:hover {
+    color: #fff8dc;
+    transform: scale(1.06);
+}
+
+/* -----------------------------SUBMENÚ----------------------------- */
+.submenu-lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 12px;
+    padding: 2px 15px;
+    min-width: 180px;
+    list-style: none;
+    z-index: 50;
+}
+
+.submenu-lista.activo {
+    display: block;
+}
+
+/* Ocultar artistas */
+.submenu .artista {
+    display: none !important;
+}
+
+/* -----------------------------FOOTER----------------------------- */ 
+footer {
+    background-color: rgba(0,0,0,0.85);
+    padding: 20px 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer, footer * {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-style: italic;
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+}
+
+footer a:hover { 
+    text-decoration: underline; 
+    color: #f0f0f0
+} 
+
+/* -----------------------------COOKIES----------------------------- */ 
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2b2b2b;
+    padding: 14px 20px;        /* antes 20px */
+    display: none;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+    font-size: 0.95em;        /* un poco más sutil */
+    z-index: 9999;
+}
+
+.cookie-banner .cookie-content {
+    max-width: 1000px;        /* evita línea infinita */
+    margin: 0 auto;
+}
+
+.cookie-banner p {
+    margin: 0 0 10px 0;
+    line-height: 1.45;
+    color: #e6e6e6;
+}
+
+.cookie-banner a {
+    color: #cfcfcf;
+    text-decoration: underline;
+}
+
+.cookie-banner a:hover {
+    color: #ffffff;
+}
+    
+.cookie-banner[role="dialog"] { 
+    outline: none; 
+} 
+.cookie-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cookie-buttons button {
+    font-size: 0.85em;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: transparent;
+    color: #f0f0f0;
+    border: 1px solid #777;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cookie-buttons .btn-aceptar {
+    border-color: #e6e6e6;
+    font-weight: 500;
+}
+
+.cookie-buttons .btn-aceptar:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.cookie-buttons .btn-rechazar {
+    opacity: 0.75;
+}
+
+.cookie-buttons .btn-rechazar:hover {
+    opacity: 1;
+}
+
+/* -----------------------------MEDIA QUERIES----------------------------- */
+@media (max-width: 1024px) {
+
+  .menu {
+    padding: 0.8rem 1rem;
+  }
+
+  .menu-desplegable {
+    min-width: 180px;
+    padding: 12px;
+  }
+
+  footer {
+    padding: 18px 8px;
+    font-size: 0.75rem;
+  }
+
+  .cookie-banner {
+    padding: 16px;
+    font-size: 0.95em;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .menu {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .menu-desplegable {
+    min-width: 160px;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 15px 6px;
+    font-size: 0.7rem;
+  }
+
+  footer p {
+    line-height: 1.3;
+  }
+
+  .cookie-banner {
+    padding: 14px;
+    font-size: 0.9em;
+  }
+
+  .cookie-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

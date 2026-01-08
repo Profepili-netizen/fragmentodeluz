@@ -1,0 +1,389 @@
+/*  VARIABLES BASE (fallback / neutro) */
+:root {
+    --bg-body: #0f1a1e;
+    --bg-bloque: #141f24;
+    --borde-bloque: rgba(255, 248, 220, 0.12);
+}
+
+/* BODY GENERAL */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--bg-body);
+}
+
+/* CONTENEDOR GENERAL */
+
+.pagina-cancion {
+    padding: 3rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagina-cancion > section {
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 4rem;
+}
+
+.ficha-cancion,
+.interpretacion-cancion,
+.titulo-con-nota {
+    margin-bottom: 4.5rem;
+}
+
+/* BLOQUE DE LECTURA */
+
+.bloque-lectura {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 3.2rem;
+    padding: 2.8rem 3rem;
+    background-color: var(--bg-bloque);
+    border: 1px solid var(--borde-bloque);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    border-radius: 14px;
+}
+
+.contenido-lectura {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* TÍTULOS */
+.pagina-cancion h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--color-h2);
+    margin: 2.8rem 0 2rem 0;
+    text-align: center;
+}
+
+.bloque-lectura > h2:first-of-type {
+    margin-top: 0.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.pagina-cancion h2:not(:first-of-type) {
+    margin-top: 4rem;
+}
+
+.pagina-cancion h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #dcd4c5;
+    margin: 2.4rem 0 1.2rem 0;
+}
+
+/* TEXTO */
+.pagina-cancion p {
+    font-size: 1.1125rem;
+    line-height: 1.65;
+    margin: 0 0 0.6rem 0;
+}
+
+.pagina-cancion p:last-child {
+    margin-bottom: 0;
+}
+
+/* FICHA DE CANCIÓN */
+.ficha-cancion {
+    font-size: 1.1125rem;
+}
+
+.datos-cancion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.datos-cancion li {
+    font-size: 1.1125rem;
+    color: #ffffff;
+}
+
+.datos-cancion strong,
+.datos-cancion em {
+    font-size: 1.1125rem;
+    color: #dcd4c5;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tema-cancion {
+    margin-top: 0.2rem;
+}
+
+.tema-cancion p:last-child {
+    margin-bottom: 0;
+}
+
+/* INTERPRETACIÓN (LETRA) */
+.interpretacion-cancion {
+    margin-bottom: 2rem;
+}
+
+.bloque-interpretacion {
+    margin-bottom: 1.2rem;
+}
+
+.bloque-interpretacion:last-child {
+    margin-bottom: 0;
+}
+
+.bloque-interpretacion h3 {
+    margin-bottom: 0.2rem;
+}
+
+.bloque-interpretacion p {
+    font-size: 1.1125rem;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.bloque-interpretacion p + p {
+    margin-top: 0.25rem;
+}
+
+/* META-INTERPRETACIÓN */
+.titulo-con-nota {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.titulo-con-nota h2 {
+    margin: 0 0 0.6rem 0;
+}
+
+.titulo-con-nota .nota-intro {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #cfc6b5;
+    max-width: 38rem;
+}
+
+.metainterpretacion-cancion h3 {
+    margin-bottom: 0.3rem;
+}
+
+.metainterpretacion-cancion p {
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+}
+
+.metainterpretacion-cancion p + p {
+    margin-top: 1.6rem;
+}
+
+.metainterpretacion-cancion em {
+    font-style: italic;
+    color: #f0e6d2;
+}
+
+.metainterpretacion-cancion strong {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(0,0,0,0.85);
+    padding: 40px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.header-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #e5e2da;
+}
+
+.acciones-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* LINKS HEADER (NEUTROS) */
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #ffe7b0;
+    text-decoration: none;
+    margin-right: 12px;
+    position: relative;
+    padding-right: 15px;
+}
+
+.links a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 3px;
+    height: 80%;
+    width: 1px;
+    background-color: #ffe7b0;
+    opacity: 0.5;
+}
+
+/* BOTONES (NEUTROS) */
+.kofi-boton {
+    background: none;
+    border: 1px solid rgba(255, 248, 220, 0.6);
+    color: #fff8dc;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 999px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.menu-boton {
+    background: none;
+    border: none;
+    color: #fff8dc;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1100;
+}
+
+.menu-desplegable {
+  top: px;
+  right: 25px;
+}
+
+/* VOLVER AL GRUPO */
+.lanzamiento-nav {
+    margin: 20px 0 35px;
+    padding-left: 30px;
+}
+
+.lanzamiento-nav a {
+    text-decoration: none;
+    color: #dcd4c5;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+/* GRUPOS – IDENTIDAD VISUAL */
+/* GOT7 */
+body.got7 {
+    --bg-body: #0f1f17;
+    --bg-bloque: #132a21;
+    --borde-bloque: rgba(0, 255, 170, 0.25);
+}
+
+/* SHINee */
+body.shinee {
+    --bg-body: #0e1f1f;
+    --bg-bloque: #132727;
+    --borde-bloque: rgba(160, 255, 240, 0.25);
+}
+
+/* EXO */
+body.exo {
+    --bg-body: #121212;
+    --bg-bloque: #1a1a1a;
+    --borde-bloque: rgba(220, 220, 220, 0.25);
+}
+
+/* THE ROSE */
+body.the-rose {
+    --bg-body: #0b0b0b;
+    --bg-bloque: #141414;
+    --borde-bloque: rgba(255, 255, 255, 0.15);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+    .bloque-lectura {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina-cancion {
+        padding: 2.5rem 1.5rem 2rem;
+    }
+
+    .bloque-lectura {
+        padding: 2.4rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    .pagina-cancion h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .pagina-cancion {
+        padding: 2rem 1rem 1.5rem;
+    }
+
+    .bloque-lectura {
+        padding: 1.8rem 1.4rem;
+        border-radius: 10px;
+    }
+
+    header {
+        padding: 28px 18px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .pagina-cancion h2 {
+        font-size: 1.55rem;
+        margin: 2.4rem 0 1.6rem;
+    }
+
+    .pagina-cancion h3 {
+        font-size: 1.1rem;
+        margin: 2rem 0 1rem;
+    }
+}
+

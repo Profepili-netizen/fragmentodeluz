@@ -1,0 +1,149 @@
+/* -----------------------------RESET / BASE GENERAL----------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1707110424412-7281dd3cbb01?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1200");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Header invisible para dar espacio al menú */
+.site-header {
+    position: relative;
+    height: 70px;
+    z-index: 3000;
+}
+
+/* -----------------------------CONTENEDOR CIELO----------------------------- */
+.cielo {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* -----------------------------CONTENIDO PRINCIPAL----------------------------- */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff8dc;
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+.contenido {
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    margin: 30px auto 50px auto;
+    padding: 25px 20px 40px 20px;
+    background-color: rgba(0, 0, 0, 0.88);
+    border-radius: 15px;
+    color: #f5f5f5;
+    line-height: 1.8;
+    z-index: 10;
+}
+
+.intro-proyecto h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #fff8e6;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.4px;
+}
+
+.contenido p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #f5f5f5;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1.6em;
+    text-indent: 0;
+}
+
+.intro-proyecto p:first-of-type {
+    text-indent: 0;
+}
+
+.intro-proyecto p:nth-of-type(n+2) {
+    text-indent: 1.2em;
+}
+
+.guia-sitio h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff8e6;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.4px;
+}
+
+.guia-sitio p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #f5f5f5;
+    text-align: justify;
+    margin-bottom: 25px;
+    letter-spacing: 0.4px;
+    text-indent: 0;
+}
+
+/* -----------------------------BOTONES FLOTANTES----------------------------- */
+.top-buttons {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 4000;
+}
+
+.menu-boton,
+.instagram-btn {
+    width: 48px;
+    height: 48px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.menu-boton:hover,
+.instagram-btn:hover {
+    background: rgba(0,0,0,0.8);
+    transform: scale(1.05);
+}
+
+.menu-boton {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.instagram-btn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.menu-desplegable {
+  top: 54px;
+  right: 0;
+}
+
+

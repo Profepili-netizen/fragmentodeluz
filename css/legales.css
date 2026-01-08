@@ -1,0 +1,80 @@
+/* -----------------------------PÁGINAS LEGALES----------------------------- */ 
+.pagina-legal {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagina-legal .recuadro {
+  max-width: 800px;
+  width: 100%;
+  background-color: #111;
+  border: 1px solid #2a2a2a;
+  padding: 2.5rem;
+  border-radius: 6px;
+}
+
+.pagina-legal .recuadro p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.pagina-legal .recuadro h1,
+.pagina-legal .recuadro h2 {
+  margin-top: 2rem;
+} 
+
+.pagina-legal p, .pagina-legal li { 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    hyphens: auto; 
+    overflow-wrap: break-word; 
+} 
+
+/* -------- PRIVACIDAD / ENLACE LEGAL EN FOOTER -------- */ 
+footer .footer-legal { 
+    font-size: 0.75rem; 
+    opacity: 0.8; 
+} 
+    
+.legal-box { 
+    background-color: rgba(0, 0, 0, 0.85); 
+    color: #f5f5f5; 
+    padding: 30px 25px; 
+    border-radius: 12px; 
+    max-width: 850px; 
+    margin: 40px auto; 
+    line-height: 1.7; 
+} 
+    
+/* -----------------------------FORMULARIO----------------------------- */ 
+.formulario-contacto { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    max-width: 400px; 
+    margin: 20px auto; 
+} 
+
+.formulario-contacto input, 
+.formulario-contacto textarea { 
+    padding: 8px; 
+    border-radius: 5px; 
+    border: 1px solid #999; 
+    background-color: rgba(255,255,255,0.95); 
+    color: #000; font-size: 1rem;
+ } 
+ 
+.formulario-contacto button { 
+    background-color: #000; 
+    color: #fff; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+} 
+
+.formulario-contacto button:hover { 
+    background-color: #222; 
+}
+
