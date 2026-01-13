@@ -22,14 +22,14 @@ h2 {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 1.6rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     color: #9fcac2;
 }
 
 /* Párrafos */
 p {
     font-size: 1.125rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     text-align: justify;
     margin-top: 0;
     margin-bottom: 0.8em;
@@ -272,7 +272,7 @@ header h1 {
     font-size: 1.3rem;
     font-family: 'Playfair Display', serif;
     font-weight: normal;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     color: #fff8dc;
     cursor: pointer;
     padding: 4px 0;
