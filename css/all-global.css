@@ -241,9 +241,59 @@ footer a:hover {
   }
 
   /* -------- GRUPOS / ÁLBUMES -------- */
-  .grupo footer,
-  .album footer {
-    padding: 12px 6px;
-    font-size: 0.7rem;
+@media (max-width: 480px) {
+  .grupo p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    letter-spacing: 0.2px;
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
+}
+
+/* ---------- HEADER ---------- */
+.grupo header {
+  padding: 22px 20px;
+}
+
+.grupo header h1 {
+  font-size: 2.1rem;
+  line-height: 1.15;
+}
+
+@media (max-width: 480px) {
+  .grupo header {
+    padding: 18px 16px;
+  }
+
+  .grupo header h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ---------- DISCOGRAFÍA ---------- */
+@media (max-width: 480px) {
+  .grupo .discografia {
+    font-size: 1.15rem;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+.grupo footer {
+  padding: 18px 12px;
+  font-size: 0.75rem;
+}
+
+.grupo footer p {
+  line-height: 1.35;
+  margin-bottom: 0.4em;
+}
+
+@media (max-width: 480px) {
+  .grupo footer {
+    padding: 14px 10px;
+    font-size: 0.72rem;
+  }
+}
+
 }
