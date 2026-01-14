@@ -30,7 +30,9 @@ h2 {
 p {
     font-size: 1.125rem;
     letter-spacing: 0.4px;
+    hyphens: auto;
     text-align: justify;
+    text-justify: inter-word;
     margin-top: 0;
     margin-bottom: 0.8em;
     line-height: 1.6;
@@ -40,7 +42,9 @@ p {
 .narracion {
     font-family: 'Inter', sans-serif;
     opacity: 0.95;
+    hyphens: auto;
     text-align: justify;
+    text-justify: inter-word;
     margin-bottom: 3.8rem;
     color: #f5f5f5;
 }
