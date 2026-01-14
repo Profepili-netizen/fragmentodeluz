@@ -323,22 +323,3 @@ header h1 {
     }
 }
 
-/* Móviles */
-@media (max-width: 480px) {
-    p {
-        font-size: 1rem;
-        line-height: 1.55;
-        letter-spacing: 0.2px;
-        hyphens: auto;
-        overflow-wrap: break-word;
-    }
-
-    h1 {
-        font-size: 2rem;
-        padding: 0 10px;
-    }
-
-    .discografia {
-        font-size: 1.15rem;
-    }
-}
