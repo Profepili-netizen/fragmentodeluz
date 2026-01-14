@@ -172,32 +172,8 @@ footer a:hover {
     opacity: 1;
 }
 
-/* -----------------------------MEDIA QUERIES----------------------------- */
-@media (max-width: 1024px) {
-
-  .menu {
-    padding: 0.8rem 1rem;
-  }
-
-  .menu-desplegable {
-    min-width: 180px;
-    padding: 12px;
-  }
-
-  footer {
-    padding: 18px 8px;
-    font-size: 0.75rem;
-  }
-
-  .cookie-banner {
-    padding: 16px;
-    font-size: 0.95em;
-  }
-}
-
-
+/* -----------------------------COOKIES----------------------------- */ 
 @media (max-width: 480px) {
-
   .menu {
     padding: 0.6rem 0.8rem;
   }
@@ -205,15 +181,6 @@ footer a:hover {
   .menu-desplegable {
     min-width: 160px;
     padding: 10px;
-  }
-
-  footer {
-    padding: 15px 6px;
-    font-size: 0.7rem;
-  }
-
-  footer p {
-    line-height: 1.3;
   }
 
   .cookie-banner {
@@ -224,5 +191,48 @@ footer a:hover {
   .cookie-buttons {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .home .contenido {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .home .intro-proyecto,
+  .home .guia-sitio {
+    padding: 1.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+   .home .contenido p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .home h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .home h2 {
+    font-size: 1.1rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .home footer {
+    padding: 16px 10px;
+    font-size: 0.75rem;
+  }
+
+  .home footer p {
+    line-height: 1.35;
+  }
+
+  /* -------- GRUPOS / ÁLBUMES -------- */
+  .grupo footer,
+  .album footer {
+    padding: 12px 6px;
+    font-size: 0.7rem;
   }
 }
