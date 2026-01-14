@@ -206,7 +206,8 @@ header h1 {
 /* Ko-fi */
 .apoyo-kofi {
   text-align: center;
-   margin: 12px 0 8px;
+  margin-top: 8px;
+  margin-bottom: 12px;
 }
 
 .apoyo-kofi p {
