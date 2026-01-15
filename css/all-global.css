@@ -253,12 +253,25 @@ footer a:hover {
 
   .grupo header,
   .album header {
-    position: static;
+    position: sticky;
+    top: 0;
     width: 100%;
     padding: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+     z-index: 3000;
+    background: inherit;
+  }
+
+  .grupo header .menu,
+  .album header .menu {
+    position: static;
+  }
+
+   .grupo main,
+  .album main {
+    padding-top: 0;
   }
 
   .grupo header h1,
