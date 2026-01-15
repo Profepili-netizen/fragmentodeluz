@@ -243,7 +243,6 @@ footer a:hover {
   /* -------- GRUPOS / ÁLBUMES -------- */
 @media (max-width: 480px) {
 
-
   /* HEADER FIJO */
   .grupo header,
   .album header {
@@ -252,16 +251,17 @@ footer a:hover {
     left: 0;
     width: 100%;
     z-index: 3000;
-    padding: 10px 16px;
+    padding: 16px 16px 14px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
   }
 
   /* Evita que el contenido quede debajo del header */
   .grupo main,
   .album main {
-    padding-top: 70px;
+    padding-top: 100px;
   }
 
   /* H1 */
@@ -270,15 +270,28 @@ footer a:hover {
     font-size: 1.4rem;
     line-height: 1.15;
     margin: 0;
-    max-width: 75%;
+    max-width: 100%;
+  }
+
+  .grupo header .enlaces-externos,
+  .album header .enlaces-externos {
+    font-size: 0.85rem;
   }
 
   /* MENÚ */
   .grupo .menu-desplegable,
   .album .menu-desplegable {
-    top: 56px;
+    top: 88px;
     right: 16px;
   }
+
+  .grupo,
+  .album {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
+
 
   /* H2 */
   .grupo h2,
@@ -307,10 +320,10 @@ footer a:hover {
   /* FOOTER */
   .grupo footer,
   .album footer {
-    padding: 24px 16px;
-    font-size: 0.9rem;
+    padding: 16px 16px 20px;
+    font-size: 0.85rem;
   }
-
+  
   /* KO-FI */
   .grupo .kofi-text,
   .grupo .kofi-texto,
@@ -318,7 +331,7 @@ footer a:hover {
   .album .kofi-texto {
     font-size: 0.85rem;
   }
-  
+
 }
 
 }
