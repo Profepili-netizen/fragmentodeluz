@@ -204,12 +204,8 @@ footer a:hover {
     overflow: visible;
   }
 
-  .home .body {
-    background-attachment: scroll;
-  }
-
   .home .contenido {
-    width: 88%;
+    width: 80%;
     padding-left: 18px;
     padding-right: 18px;
   }
