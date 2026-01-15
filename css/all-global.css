@@ -261,22 +261,21 @@ footer a:hover {
     gap: 6px;
   }
 
-  .grupo .menu,
-  .album .menu {
+  .grupo header .menu,
+  .album header .menu {
     position: absolute;
     top: 16px;
     right: 16px;
     z-index: 4000;
   }
-
   .grupo main,
   .album main {
-    padding-top: 88px;
+    padding-top: 120px;
   }
 
   .grupo header h1,
   .album header h1 {
-    padding-right: 48px;
+    padding-right: 56px;
     font-size: 1.4rem;
     line-height: 1.15;
     margin: 0;
@@ -329,10 +328,12 @@ footer a:hover {
   .album .kofi-text,
   .album .kofi-texto {
     font-size: 0.65rem;
-    line-height: 1.3;
+    line-height: 1.2;
+    white-space: nowrap;
   }
 
 }
+
 }
 
 
