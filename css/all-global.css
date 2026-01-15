@@ -208,12 +208,10 @@ footer a:hover {
     background-attachment: scroll;
   }
 
-  .home .contenido p {
-    font-size: 0.95rem;
-    line-height: 1.55;
-    letter-spacing: 0.2px;
-    hyphens: auto;
-    overflow-wrap: break-word;
+  .home .contenido {
+    width: 88%;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .home h1 {
@@ -225,10 +223,25 @@ footer a:hover {
     margin-top: 0.4rem;
   }
 
+  .home .contenido p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    letter-spacing: 0.2px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
   .home h2 {
     font-size: 1.1rem;
     margin-top: 1.6rem;
     margin-bottom: 0.8rem;
+  }
+
+  .home .guia-sitio p {
+    line-height: 1.55;
+    letter-spacing: 0.1px;
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 
   /* -------- GRUPOS / ÁLBUMES -------- */
