@@ -251,33 +251,3 @@ header h1 {
     color: #fff8dc;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-   p {
-        font-size: 1.05rem;
-        line-height: 1.55;
-        letter-spacing: 0.3px;
-    }
-
-    h1 { 
-        font-size: 2.4rem; }
-}
-
-@media (max-width: 480px) {
-    p {
-        font-size: 1rem;
-        line-height: 1.55;
-        letter-spacing: 0.2px;
-        hyphens: auto;
-        overflow-wrap: break-word;
-    }
-
-    h1 {
-        font-size: 2rem;
-        padding: 0 10px;
-    }
-
-    .discografia {
-        font-size: 1.15rem;
-    }
-}

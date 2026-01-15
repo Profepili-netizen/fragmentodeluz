@@ -243,45 +243,82 @@ footer a:hover {
   /* -------- GRUPOS / ÁLBUMES -------- */
 @media (max-width: 480px) {
 
-  .grupos .header {
-    position: sticky;
+
+  /* HEADER FIJO */
+  .grupo header,
+  .album header {
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 3000;
-    padding: 14px 16px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .grupo .header h1 {
-    font-size: 1.6rem;
+  /* Evita que el contenido quede debajo del header */
+  .grupo main,
+  .album main {
+    padding-top: 70px;
+  }
+
+  /* H1 */
+  .grupo header h1,
+  .album header h1 {
+    font-size: 1.4rem;
     line-height: 1.15;
+    margin: 0;
+    max-width: 75%;
   }
 
-  .grupo .menu-desplegable {
-    top: 58px;
+  /* MENÚ */
+  .grupo .menu-desplegable,
+  .album .menu-desplegable {
+    top: 56px;
     right: 16px;
   }
 
-  .grupo .main {
-    padding-top: 24px;
-  }
-
-  .grupo .h2 {
+  /* H2 */
+  .grupo h2,
+  .album h2 {
     font-size: 1.15rem;
     line-height: 1.3;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0 1rem;
   }
 
-  .grupo p {
-    font-size: 0.95rem;
+  /* TEXTO */
+  .grupo p,
+  .album p {
+    font-size: 1rem;
     line-height: 1.55;
     letter-spacing: 0.2px;
     hyphens: auto;
     overflow-wrap: break-word;
   }
 
-  .grupo .discografia {
-    font-size: 1.15rem;
+  /* DISCOGRAFÍA */
+  .grupo .discografia,
+  .album .discografia {
+    font-size: 1.1rem;
   }
+
+  /* FOOTER */
+  .grupo footer,
+  .album footer {
+    padding: 24px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* KO-FI */
+  .grupo .kofi-text,
+  .grupo .kofi-texto,
+  .album .kofi-text,
+  .album .kofi-texto {
+    font-size: 0.85rem;
+  }
+  
 }
 
 }
