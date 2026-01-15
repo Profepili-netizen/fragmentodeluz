@@ -327,11 +327,9 @@ footer a:hover {
   }
 
   /* KO-FI */
-  .grupo .kofi-text,
-  .grupo .kofi-texto,
-  .album .kofi-text,
-  .album .kofi-texto {
-    font-size: 0.65rem;
+  .grupo .apoyo-kofi,
+  .album .apoyo-kofi {
+    font-size: 0.7rem;
     line-height: 1.2;
     white-space: nowrap;
   }
