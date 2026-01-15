@@ -242,18 +242,14 @@ footer a:hover {
 
   /* -------- GRUPOS / ÁLBUMES -------- */
 @media (max-width: 480px) {
-
-  /* BASE */
   html,
   body {
     min-height: 100%;
   }
 
-  /* HEADER */
   .grupo header,
   .album header {
     position: fixed;
-     position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -265,37 +261,26 @@ footer a:hover {
     gap: 6px;
   }
 
-  /* MENÚ FUERA DEL FLUJO */
   .grupo .menu,
   .album .menu {
     position: absolute;
     top: 16px;
     right: 16px;
+    z-index: 4000;
   }
 
-  .grupo .menu-desplegable,
-  .album .menu-desplegable {
-    top: 56px;
-    right: 16px;
-  }
-
-  /* CONTENIDO */
   .grupo main,
   .album main {
-    padding-top: 120px;
+    padding-top: 88px;
   }
 
-  .grupo main > *:first-child,
-  .album main > *:first-child {
-    margin-top: 1.2rem;
-  }
-
-  /* TÍTULOS */
   .grupo header h1,
   .album header h1 {
+    padding-right: 48px;
     font-size: 1.4rem;
     line-height: 1.15;
     margin: 0;
+
   }
 
   .grupo h2,
@@ -304,7 +289,6 @@ footer a:hover {
     margin: 2rem 0 1rem;
   }
 
-  /* TEXTO */
   .grupo p,
   .album p {
     font-size: 1rem;
@@ -313,7 +297,6 @@ footer a:hover {
     overflow-wrap: break-word;
   }
 
-  /* FONDO */
   .grupo,
   .album {
     background-attachment: scroll;
@@ -322,11 +305,10 @@ footer a:hover {
     min-height: 100vh;
   }
 
-  /* FOOTER (CONTROL TOTAL) */
   .grupo footer,
   .album footer {
-    font-size: 0.75rem;
-    padding: 12px 16px;
+    font-size: 0.6rem;
+    line-height: 1.25;
   }
 
   .grupo footer p,
