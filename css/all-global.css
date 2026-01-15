@@ -332,6 +332,7 @@ footer a:hover {
     font-size: 0.7rem;
     line-height: 1.2;
     white-space: nowrap;
+    max-width: max-content;
   }
 
 }
