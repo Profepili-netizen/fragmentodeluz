@@ -17,6 +17,16 @@ body {
     background-color: var(--bg-body);
 }
 
+/* Ajustes de fondo por aspecto */
+@media (min-aspect-ratio: 16/9) {
+    body::before { background-position: center 55%; }
+}
+
+@media (max-aspect-ratio: 4/3) {
+    body::before { background-position: center 70%; }
+}
+
+
 /* CONTENEDOR GENERAL */
 .pagina-cancion {
     padding: 3rem 1.5rem 2rem;
