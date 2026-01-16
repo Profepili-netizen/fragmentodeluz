@@ -394,8 +394,10 @@ body.the-rose {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.4rem;
         line-height: 1.15;
+        margin: 0;
+        padding: 0;
     }
 
     .acciones-header {
@@ -421,21 +423,34 @@ body.the-rose {
         margin-right: 10px;
     }
 
-    @media (max-width: 480px) {
-
     .pagina-cancion > section { 
         margin-bottom: 3rem;
     }
 
-    /* INTERPRETACIÓN (letra) */
+    .bloque-interpretacion h3
+    .metainterpretacion-cancion h3 {
+        margin-top: 2.6rem;
+        font-size: 1.06rem;
+    }
+    
+    .datos-cancion
+    .tema-cancion {
+        font-size: 0.95rem;
+        line-height: 1.55;
+        hyphens: auto;
+        overflow-wrap: break-word;
+    }
+
     .bloque-interpretacion {
         margin-bottom: 2.4rem;
     }
 
     .bloque-interpretacion p {
-        font-size: 1.02rem;
-        line-height: 1.7;
-    }
+        font-size: 1rem;
+        line-height: 1.55;
+        hyphens: auto;
+        overflow-wrap: break-word;
+  }
 
     /* META-INTERPRETACIÓN */
     .metainterpretacion-cancion h3 {
@@ -444,8 +459,9 @@ body.the-rose {
 
     .metainterpretacion-cancion p {
         font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 1.8rem;
+        line-height: 1.55;
+        hyphens: auto;
+        overflow-wrap: break-word;
     }
 
     /* NOTA INTRO */
@@ -453,6 +469,4 @@ body.the-rose {
         font-size: 0.95rem;
         line-height: 1.5;
     }
-}
-
 }
