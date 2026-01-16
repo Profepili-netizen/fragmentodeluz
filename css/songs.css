@@ -421,30 +421,38 @@ body.the-rose {
         margin-right: 10px;
     }
 
-    .pagina-cancion > section {
+    @media (max-width: 480px) {
+
+    .pagina-cancion > section { 
         margin-bottom: 3rem;
     }
 
+    /* INTERPRETACIÓN (letra) */
     .bloque-interpretacion {
         margin-bottom: 2.4rem;
     }
 
     .bloque-interpretacion p {
-        line-height: 1.75;
+        font-size: 1.02rem;
+        line-height: 1.7;
     }
 
+    /* META-INTERPRETACIÓN */
     .metainterpretacion-cancion h3 {
         margin-top: 2.6rem;
     }
 
     .metainterpretacion-cancion p {
+        font-size: 1rem;
+        line-height: 1.6;
         margin-bottom: 1.8rem;
     }
 
+    /* NOTA INTRO */
     .titulo-con-nota .nota-intro {
         font-size: 0.95rem;
         line-height: 1.5;
     }
 }
 
-
+}
