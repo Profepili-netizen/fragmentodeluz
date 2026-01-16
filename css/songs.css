@@ -355,35 +355,63 @@ body.the-rose {
 }
 
 @media (max-width: 480px) {
-    body {
-        font-size: 16px;
-    }
-
-    .pagina-cancion {
-        padding: 2rem 1rem 1.5rem;
-    }
-
-    .bloque-lectura {
-        padding: 1.8rem 1.4rem;
-        border-radius: 10px;
-    }
 
     header {
-        padding: 28px 18px;
+        padding: 22px 16px;
     }
 
     header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        line-height: 1.15;
     }
 
-    .pagina-cancion h2 {
-        font-size: 1.55rem;
-        margin: 2.4rem 0 1.6rem;
+    .acciones-header {
+        gap: 0.5rem;
     }
 
-    .pagina-cancion h3 {
-        font-size: 1.1rem;
-        margin: 2rem 0 1rem;
+    .kofi-boton {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+
+    .menu-boton {
+        font-size: 28px;
+        padding: 8px 12px;
+    }
+
+    .links {
+        margin-top: 8px;
+    }
+
+    .links a {
+        font-size: 0.95rem;
+        margin-right: 10px;
+    }
+
+    .pagina-cancion > section {
+        margin-bottom: 3rem;
+    }
+
+    .bloque-interpretacion {
+        margin-bottom: 2.4rem;
+    }
+
+    .bloque-interpretacion p {
+        line-height: 1.75;
+    }
+
+    .metainterpretacion-cancion h3 {
+        margin-top: 2.6rem;
+    }
+
+    .metainterpretacion-cancion p {
+        margin-bottom: 1.8rem;
+    }
+
+    .titulo-con-nota .nota-intro {
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
 }
+
 
