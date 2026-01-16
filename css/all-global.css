@@ -267,7 +267,7 @@ footer a:hover {
 
   .grupo header .menu,
   .album header .menu {
-    position: absolute;
+    position: static;
     top: 16px;
     right: 16px;
     z-index: 4000;
@@ -283,7 +283,7 @@ footer a:hover {
 
   .grupo main,
   .album main {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   .grupo h2,
