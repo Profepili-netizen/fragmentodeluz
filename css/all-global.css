@@ -258,32 +258,44 @@ footer a:hover {
     left: 0;
     width: 100%;
     z-index: 3000;
-    padding: 16px;
+    padding: 20px 20px 16px;
+    background: inherit;
+
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .grupo .header-linea,
+  .album .header-linea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: inherit;
-  }
-
-  .grupo header .menu,
-  .album header .menu {
-    position: static;
-    top: 16px;
-    right: 16px;
-    z-index: 4000;
   }
 
   .grupo header h1,
   .album header h1 {
-    padding-right: 56px;
     font-size: 1.4rem;
     line-height: 1.15;
     margin: 0;
+    padding: 0;
+  }
+
+  .grupo .links,
+  .album .links {
+    margin-top: 8px;
+    display: flex;
+  }
+
+  .grupo .links a,
+  .album .links a {
+    font-size: 1rem;
+    margin-right: 10px;
+    padding-right: 10px;
   }
 
   .grupo main,
   .album main {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
   .grupo h2,
