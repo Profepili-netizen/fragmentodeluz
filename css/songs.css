@@ -437,15 +437,17 @@ body.the-rose {
     /* H3 */
     .bloque-interpretacion h3,
     .metainterpretacion-cancion h3 {
-        font-size: 1.05rem;
+        font-size: 1rem;
         margin-top: 2rem;
     }
 
     /* TEXTO GENERAL */
     .pagina-cancion p,
+    .bloque-interpretacion p,
+    .metainterpretacion-cancion p,
     .datos-cancion li,
     .tema-cancion p {
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.55;
         hyphens: auto;
         overflow-wrap: break-word;
@@ -467,7 +469,7 @@ body.the-rose {
 
     /* NOTA INTRO */
     .titulo-con-nota .nota-intro {
-        font-size: 0.95rem;
+        font-size: 1.15rem;
         line-height: 1.5;
     }
 }
