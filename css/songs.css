@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /*  VARIABLES BASE (fallback / neutro) */
 :root {
     --bg-body: #0f1a1e;
@@ -17,7 +23,6 @@ body {
     background-color: var(--bg-body);
 }
 
-/* Ajustes de fondo por aspecto */
 @media (min-aspect-ratio: 16/9) {
     body::before { background-position: center 55%; }
 }
@@ -25,7 +30,6 @@ body {
 @media (max-aspect-ratio: 4/3) {
     body::before { background-position: center 70%; }
 }
-
 
 /* CONTENEDOR GENERAL */
 .pagina-cancion {
@@ -341,6 +345,7 @@ body.the-rose {
 /* RESPONSIVE */
 
 @media (max-width: 1024px) {
+
     .bloque-lectura {
         max-width: 1000px;
     }
@@ -365,6 +370,11 @@ body.the-rose {
 }
 
 @media (max-width: 480px) {
+
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
 
     header {
         padding: 22px 16px;
