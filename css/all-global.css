@@ -351,9 +351,9 @@ footer a:hover {
   
   }
 
-  .grupo .apoyo-kofi,
-  .album .apoyo-kofi {
-  font-size: 1.1rem;
+  .grupo .discografia,
+  .album .canciones {
+    font-size: 1.1rem;
   }    
 
 }
