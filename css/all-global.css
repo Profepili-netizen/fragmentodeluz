@@ -344,13 +344,17 @@ footer a:hover {
     line-height: 1.4;
   }
 
-  /* KO-FI */
   .grupo .apoyo-kofi,
   .album .apoyo-kofi {
     font-size: 0.65rem;
     line-height: 1.2;
   
   }
+
+  .grupo .apoyo-kofi,
+  .album .apoyo-kofi {
+  font-size: 1.1rem;
+  }    
 
 }
 
