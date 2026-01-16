@@ -294,8 +294,9 @@ footer a:hover {
   }
 
   .menu-boton {
-  font-size: 26px;
-  padding: 6px 6px;
+    font-size: 26px;
+    padding: 8px 10px;
+    margin-top: -6px;
   }
 
   .menu-desplegable {
