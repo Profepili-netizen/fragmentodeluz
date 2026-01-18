@@ -347,11 +347,12 @@ footer a:hover {
     line-height: 1.4;
   }
 
-  .grupo .apoyo-kofi,
-  .album .apoyo-kofi {
+.grupo .apoyo-kofi,
+.album .apoyo-kofi {
     font-size: 0.65rem;
-    line-height: 1.2;
-  
+    line-height: 1.15;
+    max-width: 22rem;
+    margin: 0.4rem auto 0;
   }
 
   .grupo .discografia,
