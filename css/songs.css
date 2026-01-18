@@ -419,7 +419,7 @@ body.the-rose {
     }
 
     .links a {
-        font-size: 0.95rem;
+        font-size: 0.90rem;
         margin-right: 10px;
     }
 
@@ -429,7 +429,8 @@ body.the-rose {
     }
 
     /* H2 — igual a grupo/album */
-    .pagina-cancion h2 {
+    .pagina-cancion h2,
+    .titulo-con-nota {
         font-size: 1.15rem;
         margin: 2rem 0 1rem;
     }
@@ -437,7 +438,7 @@ body.the-rose {
     /* H3 */
     .bloque-interpretacion h3,
     .metainterpretacion-cancion h3 {
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin-top: 2rem;
     }
 
@@ -447,7 +448,7 @@ body.the-rose {
     .metainterpretacion-cancion p,
     .datos-cancion li,
     .tema-cancion p {
-        font-size: 0.95rem;
+        font-size: 0.90rem;
         line-height: 1.55;
         hyphens: auto;
         overflow-wrap: break-word;
@@ -468,8 +469,11 @@ body.the-rose {
     }
 
     /* NOTA INTRO */
-    .titulo-con-nota .nota-intro {
-        font-size: 1.15rem;
+    .nota-intro {
+        font-size: 0.90rem;
         line-height: 1.5;
+        margin: 0.4rem auto 0;
+        max-width: 38rem;
+        text-align: center;
     }
 }
