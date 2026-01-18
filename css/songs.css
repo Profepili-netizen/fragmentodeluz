@@ -429,8 +429,7 @@ body.the-rose {
     }
 
     /* H2 — igual a grupo/album */
-    .pagina-cancion h2,
-    .titulo-con-nota {
+    .pagina-cancion h2 {
         font-size: 1.15rem;
         margin: 2rem 0 1rem;
     }
@@ -469,7 +468,7 @@ body.the-rose {
     }
 
     /* NOTA INTRO */
-    .nota-intro {
+    .nota-intro .titulo-con-nota {
         font-size: 0.90rem;
         line-height: 1.5;
         margin: 0.4rem auto 0;
