@@ -423,26 +423,22 @@ body.the-rose {
         margin-right: 10px;
     }
 
-    /* SECCIONES */
     .pagina-cancion > section {
         margin-bottom: 3rem;
     }
 
-    /* H2 — igual a grupo/album */
     .pagina-cancion h2,
     .titulo-con-nota{
         font-size: 1.15rem;
         margin: 2rem 0 1rem;
     }
 
-    /* H3 */
     .bloque-interpretacion h3,
     .metainterpretacion-cancion h3 {
         font-size: 0.95rem;
         margin-top: 2rem;
     }
 
-    /* TEXTO GENERAL */
     .pagina-cancion p,
     .bloque-interpretacion p,
     .metainterpretacion-cancion p,
@@ -454,7 +450,6 @@ body.the-rose {
         overflow-wrap: break-word;
     }
 
-    /* INTERPRETACIÓN */
     .bloque-interpretacion {
         margin-bottom: 2.4rem;
     }
@@ -463,12 +458,10 @@ body.the-rose {
         font-style: italic;
     }
 
-    /* META-INTERPRETACIÓN */
     .metainterpretacion-cancion p {
         margin-bottom: 1.6rem;
     }
 
-    /* NOTA INTRO */
     .nota-intro {
     font-size: 0.70rem;
     line-height: 1.3;
