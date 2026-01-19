@@ -260,7 +260,6 @@ footer a:hover {
     z-index: 3000;
     padding: 20px 20px 16px;
     background: inherit;
-
     display: flex;
     flex-direction: column; 
   }
@@ -296,14 +295,8 @@ footer a:hover {
 
   .grupo .menu-boton,
   .album .menu-boton {
-    font-size: 28px;
     padding: 8px 12px;
-}
-
-
-  .grupo .menu-desplegable,
-  .album .menu-desplegable {
-    top: 100%;
+    transform: translateY(-2px);
 }
 
   .grupo main,
