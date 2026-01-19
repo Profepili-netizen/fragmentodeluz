@@ -298,6 +298,12 @@ footer a:hover {
     margin-right: 10px;
   }
 
+  .menu-desplegable {
+    right: 12px;
+    left: auto;
+    max-width: calc(100vw - 24px);
+  }
+
   .grupo main,
   .album main {
     padding-top: 120px;
