@@ -245,32 +245,6 @@ header h1 {
     gap: 0.8rem;
 }
 
-/* LINKS HEADER (NEUTROS) */
-.links {
-    margin-top: 10px;
-}
-
-.links a {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    color: #ffe7b0;
-    text-decoration: none;
-    margin-right: 12px;
-    position: relative;
-    padding-right: 15px;
-}
-
-.links a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 3px;
-    height: 80%;
-    width: 1px;
-    background-color: #ffe7b0;
-    opacity: 0.5;
-}
-
 /* BOTONES (NEUTROS) */
 .kofi-boton {
     background: none;
@@ -412,15 +386,6 @@ body.the-rose {
     .menu-boton {
         font-size: 28px;
         padding: 8px 12px;
-    }
-
-    .links {
-        margin-top: 8px;
-    }
-
-    .links a {
-        font-size: 0.90rem;
-        margin-right: 10px;
     }
 
     .pagina-cancion > section {
