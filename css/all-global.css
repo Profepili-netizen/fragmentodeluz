@@ -299,6 +299,11 @@ footer a:hover {
     transform: translateY(-2px);
 }
 
+  .grupo .menu-desplegable,
+  .album .menu-desplegable {
+    top: 58px; /* ajustable */
+}
+
   .grupo main,
   .album main {
     padding-top: 120px;
