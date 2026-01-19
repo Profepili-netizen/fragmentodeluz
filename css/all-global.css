@@ -270,6 +270,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 10px;
   }
 
   .grupo header h1,
@@ -292,17 +293,18 @@ footer a:hover {
     margin-right: 10px;
     padding-right: 10px;
   }
-  .menu-boton {
+
+  .grupo .menu-boton,
+  .album .menu-boton {
     font-size: 28px;
     padding: 8px 12px;
-    margin-right: 10px;
-  }
+}
 
-  .menu-desplegable {
-    right: 12px;
-    left: auto;
-    max-width: calc(100vw - 24px);
-  }
+
+  .grupo .menu-desplegable,
+  .album .menu-desplegable {
+    top: 100%;
+}
 
   .grupo main,
   .album main {
