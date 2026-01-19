@@ -293,8 +293,13 @@ footer a:hover {
     padding-right: 10px;
   }
   .menu-boton {
-  margin-right: 10px;
-}
+    font-size: 28px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 
   .grupo main,
   .album main {
