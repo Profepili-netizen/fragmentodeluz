@@ -193,7 +193,133 @@ footer a:hover {
     gap: 10px;
   }
 
+  /* -------- TABLETS -------- */
+@media (min-width: 481px) and (max-width: 1024px) {
+
   /* -------- HOME -------- */
+  .home .instagram-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .home .contenido {
+    width: 70%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .home h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .home h1 + h2 {
+    margin-top: 0.6rem;
+  }
+
+  .home .contenido p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    letter-spacing: 0.25px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .home h2 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .home .guia-sitio h2 {
+    font-size: 1.1rem;
+  }
+
+  .home .guia-sitio p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* -------- GRUPOS / ÁLBUMES -------- */
+  .grupo header,
+  .album header {
+    padding: 24px 28px 18px;
+  }
+
+  .grupo header h1,
+  .album header h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .grupo .links a,
+  .album .links a {
+    font-size: 1rem;
+    margin-right: 14px;
+    padding-right: 14px;
+  }
+
+  .grupo .menu-boton,
+  .album .menu-boton {
+    padding: 10px 14px;
+  }
+
+  .grupo .menu-desplegable,
+  .album .menu-desplegable {
+    top: 64px;
+  }
+
+  .grupo main,
+  .album main {
+    padding-top: 140px;
+  }
+
+  .grupo h2,
+  .album h2 {
+    font-size: 1.3rem;
+    margin: 2.4rem 0 1.2rem;
+  }
+
+  .grupo p,
+  .album p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .grupo footer,
+  .album footer {
+    font-size: 0.7rem;
+  }
+
+  .grupo footer p,
+  .grupo footer a,
+  .grupo footer span,
+  .grupo footer small,
+  .album footer p,
+  .album footer a,
+  .album footer span,
+  .album footer small {
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+
+  .grupo .apoyo-kofi,
+  .album .apoyo-kofi {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    max-width: 26rem;
+    margin-top: 0.6rem;
+  }
+
+  .grupo .discografia,
+  .album .canciones {
+    font-size: 1.2rem;
+  }
+}
+
+  /* -------- HOME -------- */
+  @media (max-width: 480px) {
+
   .home .instagram-btn svg {
     width: 18px;
     height: 18px;
@@ -245,7 +371,6 @@ footer a:hover {
   }
 
   /* -------- GRUPOS / ÁLBUMES -------- */
-@media (max-width: 480px) {
   html,
   body {
     min-height: 100%;
