@@ -24,7 +24,7 @@ body {
 /* Header invisible para dar espacio al menú */
 .site-header {
     position: relative;
-    height: 70px;
+    height: 4.375rem;
     z-index: 3000;
 }
 
@@ -44,16 +44,17 @@ h1 {
     color: #fff8dc;
     margin-top: 0; 
     margin-bottom: 0;
+    padding-top: 1.25rem;
 }
 
 .contenido {
     position: relative;
-    max-width: 800px;
+    max-width: 50rem;
     width: 90%;
-    margin: 30px auto 50px auto;
-    padding: 25px 20px 40px 20px;
+    margin: 1.875rem auto 3.125rem auto;
+    padding: 1.5625rem 1.25rem 2.5rem 1.25rem;
     background-color: rgba(0, 0, 0, 0.88);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     color: #f5f5f5;
     line-height: 1.8;
     z-index: 10;
@@ -63,10 +64,10 @@ h1 {
     font-size: 1.35rem;
     font-weight: 600;
     color: #fff8e6;
-    margin-top: 12px;
-    margin-bottom: 18px;
+    margin-top: 0.75rem;
+    margin-bottom: 1.125rem;
     font-family: 'Playfair Display', serif;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.025rem;
 }
 
 .contenido p {
@@ -77,7 +78,7 @@ h1 {
     hyphens: auto;
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 1.6em;
+    margin-bottom: 1.6rem;
     text-indent: 0;
 }
 
@@ -90,13 +91,13 @@ h1 {
 }
 
 .guia-sitio h2 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #fff8e6;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 3.125rem;
+    margin-bottom: 0.625rem;
     font-family: 'Playfair Display', serif;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.025rem;
 }
 
 .guia-sitio p {
@@ -105,31 +106,34 @@ h1 {
     line-height: 1.6;
     color: #f5f5f5;
     text-align: justify;
-    margin-bottom: 25px;
-    letter-spacing: 0.4px;
+    margin-bottom: 1.5625rem;
+    letter-spacing: 0.025rem;
     text-indent: 0;
 }
 
 /* -----------------------------BOTONES FLOTANTES----------------------------- */
 .top-buttons {
     position: absolute;
-    top: 18px;
-    right: 20px;
+    top: 1.125rem;
+    right: 1.25rem;
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
     align-items: center;
     z-index: 4000;
 }
 
 .menu-boton {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background: rgba(0,0,0,0.6);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     cursor: pointer;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #fff;
     transition: background 0.3s, transform 0.2s;
 }
 
@@ -138,11 +142,6 @@ h1 {
     transform: scale(1.05);
 }
 
-.menu-boton {
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
-}
 .menu-desplegable {
   top: 54px;
   right: 0;
