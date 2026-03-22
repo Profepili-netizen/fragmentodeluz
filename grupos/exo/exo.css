@@ -23,7 +23,6 @@ h2 {
     margin-top: 3rem;
     margin-bottom: 1.6rem;
     letter-spacing: 0.4px;
-    color: #9CA0A6;
 }
 
 /* Párrafos */
@@ -139,7 +138,7 @@ body::before {
 
 /* ——— Header ——— */
 header {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(2px);
     padding: 40px 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -170,6 +169,16 @@ header h1 {
     padding: 10px 15px;
     position: relative;
     z-index: 1100;
+
+    /* El Recuadro */
+    border: 1px solid rgba(255, 248, 220, 0.4); /* Borde sutil */
+    border-radius: 4px;                        /* Esquinas apenas redondeadas */
+    padding: 5px 12px;                         /* Espacio para que el borde no toque el texto */
+    
+    /* Para que no se mueva el resto del header al aparecer el borde */
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 /* ——— MENÚ DESPLEGABLE ——— */
