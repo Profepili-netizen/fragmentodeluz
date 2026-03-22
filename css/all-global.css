@@ -1,7 +1,13 @@
+html {
+    background-color: #000; /* Esto elimina el color blanco del fondo del navegador */
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    background-color: #000; /* Asegura que el cuerpo también sea negro */
+    margin: 0;
 }
 
 /* -----------------------------MENÚ DESPLEGABLE----------------------------- */
