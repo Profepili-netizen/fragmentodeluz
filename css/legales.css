@@ -9,9 +9,9 @@
   max-width: 800px;
   width: 100%;
   background-color: #111;
-  border: 1px solid #2a2a2a;
+  border: 0.0625rem solid #2a2a2a;
   padding: 2.5rem;
-  border-radius: 6px;
+  border-radius: 0.375rem;
 }
 
 .pagina-legal .recuadro p {
@@ -40,10 +40,10 @@ footer .footer-legal {
 .legal-box { 
     background-color: rgba(0, 0, 0, 0.85); 
     color: #f5f5f5; 
-    padding: 30px 25px; 
-    border-radius: 12px; 
-    max-width: 850px; 
-    margin: 40px auto; 
+    padding: 1.875rem 1.5625rem;
+    border-radius: 0.75rem;
+    max-width: 53.125rem;
+    margin: 2.5rem auto; 
     line-height: 1.7; 
 } 
     
@@ -58,9 +58,9 @@ footer .footer-legal {
 
 .formulario-contacto input, 
 .formulario-contacto textarea { 
-    padding: 8px; 
-    border-radius: 5px; 
-    border: 1px solid #999; 
+    padding: 0.5rem; 
+    border-radius: 0.3125; 
+    border: 0.0625 solid #999; 
     background-color: rgba(255,255,255,0.95); 
     color: #000; font-size: 1rem;
  } 
@@ -69,8 +69,8 @@ footer .footer-legal {
     background-color: #000; 
     color: #fff; 
     border: none; 
-    padding: 10px; 
-    border-radius: 5px; 
+    padding: 0.625; 
+    border-radius: 0.3125rem; 
     cursor: pointer; 
 } 
 
