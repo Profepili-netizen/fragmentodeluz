@@ -180,10 +180,9 @@ header h1 {
     transform: scale(1.05);
 }
 
-/* ——— MENÚ DESPLEGABLE ——— */
 .menu-desplegable {
-  top: 90px;
-  right: 25px;
+ top: 6.8rem;   
+ right: 1.5625rem
 }
 
 /* ——— DISCOGRAFÍA ——— */
