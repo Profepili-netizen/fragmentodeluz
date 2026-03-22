@@ -9,11 +9,12 @@ body {
     display: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.95);
-    padding: 15px;
-    border-radius: 10px;
-    min-width: 200px;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    min-width: 12.5rem;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+    box-shadow: 0 0.125rem 0.5rem rgba(255,255,255,0.1);
+    border: 0.065rem solid rgba(255, 248, 220, 0.1);
 }
 
 .menu-desplegable.visible {
@@ -27,15 +28,15 @@ body {
 }
 
 .menu-desplegable li {
-    margin: 15px 0;
+    margin: 0.9375rem 0;
 }
 
 .menu-desplegable a {
     color: #f5f5f5;
     text-decoration: none;
     font-family: 'Lora', serif;
-    font-size: 1.3em;
-    letter-spacing: 1px;
+    font-size: 1.25rem;
+    letter-spacing: 0.0625rem;
     display: inline-block;
     transition: color 0.25s ease, transform 0.2s ease;
 }
@@ -52,9 +53,9 @@ body {
     top: 100%;
     left: 0;
     background-color: rgba(0,0,0,0.9);
-    border-radius: 12px;
-    padding: 2px 15px;
-    min-width: 180px;
+    border-radius: 0.75rem;    
+    padding: 0.125rem 0.9375rem;
+    min-width: 11.25rem; 
     list-style: none;
     z-index: 50;
 }
@@ -71,13 +72,13 @@ body {
 /* -----------------------------FOOTER----------------------------- */ 
 footer {
     background-color: rgba(0,0,0,0.85);
-    padding: 20px 10px;
-    margin-top: 50px;
+    padding: 1.25rem 0.625rem;
+    margin-top: 3.125rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    gap: 0.5rem;
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.15);
 }
 
 footer, footer * {
@@ -108,20 +109,20 @@ footer a:hover {
     left: 0;
     right: 0;
     background-color: #2b2b2b;
-    padding: 14px 20px;        /* antes 20px */
+    padding: 0.875rem 1.25rem;    
     display: none;
-    box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
-    font-size: 0.95em;        /* un poco más sutil */
+    box-shadow: 0 -0.1875rem 0.625rem rgba(0,0,0,0.3);
+    font-size: 0.95em;        
     z-index: 9999;
 }
 
 .cookie-banner .cookie-content {
-    max-width: 1000px;        /* evita línea infinita */
+    max-width: 62.5rem;       
     margin: 0 auto;
 }
 
 .cookie-banner p {
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625rem 0;
     line-height: 1.45;
     color: #e6e6e6;
 }
@@ -141,17 +142,17 @@ footer a:hover {
 .cookie-buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .cookie-buttons button {
     font-size: 0.85em;
-    padding: 6px 14px;
-    border-radius: 6px;
+    padding: 0.375rem 0.875rem;
+    border-radius: 0.375rem;
     cursor: pointer;
     background: transparent;
     color: #f0f0f0;
-    border: 1px solid #777;
+    border: 0.0625rem solid #777;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -173,39 +174,33 @@ footer a:hover {
 }
 
 /* -----------------------------COOKIES----------------------------- */ 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .menu {
     padding: 0.6rem 0.8rem;
   }
 
   .menu-desplegable {
-    min-width: 160px;
-    padding: 10px;
+    min-width: 10rem;
+    padding: 0.625rem; 
   }
 
   .cookie-banner {
-    padding: 14px;
+    padding: 0.875rem;
     font-size: 0.9em;
   }
 
   .cookie-buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   /* -------- TABLETS -------- */
-@media (min-width: 481px) and (max-width: 1024px) {
-
+@media (min-width: 30.0625rem) and (max-width: 64rem) {
   /* -------- HOME -------- */
-  .home .instagram-btn svg {
-    width: 20px;
-    height: 20px;
-  }
-
   .home .contenido {
     width: 70%;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .home h1 {
@@ -243,7 +238,7 @@ footer a:hover {
   /* -------- GRUPOS / ÁLBUMES -------- */
   .grupo header,
   .album header {
-    padding: 24px 28px 18px;
+    padding: 1.5rem 1.75rem 1.125rem;
   }
 
   .grupo header h1,
@@ -255,23 +250,23 @@ footer a:hover {
   .grupo .links a,
   .album .links a {
     font-size: 1rem;
-    margin-right: 14px;
-    padding-right: 14px;
+    margin-right: 0.875rem;
+    padding-right: 0.875rem;
   }
 
   .grupo .menu-boton,
   .album .menu-boton {
-    padding: 10px 14px;
+    padding: 0.625rem 0.875rem;
   }
 
   .grupo .menu-desplegable,
   .album .menu-desplegable {
-    top: 64px;
+    top: 4rem;
   }
 
   .grupo main,
   .album main {
-    padding-top: 140px;
+    padding-top: 8.75rem;
   }
 
   .grupo h2,
@@ -320,11 +315,6 @@ footer a:hover {
   /* -------- HOME -------- */
   @media (max-width: 480px) {
 
-  .home .instagram-btn svg {
-    width: 18px;
-    height: 18px;
-  }
-
   .home .cielo {
     min-height: auto;
     overflow: visible;
@@ -332,8 +322,8 @@ footer a:hover {
 
   .home .contenido {
     width: 80%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
   }
 
   .home h1 {
@@ -414,24 +404,24 @@ footer a:hover {
   .grupo .links a,
   .album .links a {
     font-size: 0.90rem;
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-right: 0.625rem;
+    padding-right: 0.625rem;
   }
 
   .grupo .menu-boton,
   .album .menu-boton {
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     transform: translateY(-2px);
 }
 
   .grupo .menu-desplegable,
   .album .menu-desplegable {
-    top: 58px; /* ajustable */
+    top: 3.625rem; 
 }
 
   .grupo main,
   .album main {
-    padding-top: 120px;
+    padding-top: 7.5rem;
   }
 
   .grupo h2,
