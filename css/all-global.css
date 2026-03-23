@@ -41,6 +41,13 @@ body {
   right: 0;
 }
 
+body.exo .menu-desplegable,
+body.the-rose .menu-desplegable,
+body.shinee .menu-desplegable,
+body.got7 .menu-desplegable {
+  top: 6rem;
+}
+
 /* -----------------------------MENÚ DESPLEGABLE----------------------------- */
 .menu-desplegable {
     display: none;
