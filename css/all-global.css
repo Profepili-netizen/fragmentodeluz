@@ -83,12 +83,10 @@ body {
     transform: scale(1.06);
 }
 
-body.exo .menu-desplegable,
-body.the-rose .menu-desplegable,
-body.shinee .menu-desplegable,
-body.got7 .menu-desplegable {
-  top: 4.5rem;
-} 
+body.grupo .menu-desplegable
+body.album .menu-desplegable {
+  top: 4.5rem; 
+}
 
 /* -----------------------------SUBMENÚ----------------------------- */
 .submenu-lista {
