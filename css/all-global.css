@@ -45,6 +45,8 @@ body {
 .menu-desplegable {
     display: none;
     position: absolute;
+    top: var(--menu-top, 3.375rem); 
+    right: 0; 
     background-color: rgba(0, 0, 0, 0.95);
     padding: 0.9375rem;
     border-radius: 0.625rem;
@@ -52,11 +54,6 @@ body {
     z-index: 1000;
     box-shadow: 0 0.125rem 0.5rem rgba(255,255,255,0.1);
     border: 0.065rem solid rgba(255, 248, 220, 0.1);
-}
-
-.menu-desplegable {
-  top: var(--menu-top, 3.375rem); 
-  right: 0; 
 }
 
 .menu-desplegable.visible {
@@ -213,26 +210,4 @@ footer a:hover {
 
 .cookie-buttons .btn-rechazar:hover {
     opacity: 1;
-}
-
-/* -----------------------------COOKIES----------------------------- */ 
-@media (max-width: 30rem) {
-  .menu {
-    padding: 0.6rem 0.8rem;
-  }
-
-  .menu-desplegable {
-    min-width: 10rem;
-    padding: 0.625rem; 
-  }
-
-  .cookie-banner {
-    padding: 0.875rem;
-    font-size: 0.9em;
-  }
-
-  .cookie-buttons {
-    flex-direction: column;
-    gap: 0.625rem;
-  }
 }
