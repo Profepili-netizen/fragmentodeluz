@@ -1,39 +1,37 @@
-*,
-*::before,
-*::after {
+/* RESET Y BOX MODEL */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-/*  VARIABLES BASE (fallback / neutro) */
+/* VARIABLES BASE (Escalables y Neutras) */
 :root {
-    --bg-body: #0f1a1e;
-    --bg-bloque: #141f24;
-    --borde-bloque: rgba(255, 248, 220, 0.12);
+    --bg-body: #0a0a0a;
+    --bg-bloque: #121212;
+    --borde-bloque: rgba(214, 207, 194, 0.1); /* Tono crema sutil */
+    --color-texto: #f5f5f5;
+    --color-acento: #d6cfc2; /* Crema/Dorado suave */
+    --fuente-serif: 'Playfair Display', serif;
+    --fuente-sans: 'Inter', sans-serif;
 }
 
-/* BODY GENERAL */
+/* BODY GENERAL: Con fondo universal texturizado */
 body {
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    line-height: 1.6;
-    color: #f5f5f5;
+    font-family: var(--fuente-sans);
+    font-size: 1rem; /* Equivale a 16px base */
+    line-height: 1.8; /* Más aire para lectura larga */
+    color: var(--color-texto);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background-color: var(--bg-body);
-}
-
-@media (min-aspect-ratio: 16/9) {
-    body::before { background-position: center 55%; }
-}
-
-@media (max-aspect-ratio: 4/3) {
-    body::before { background-position: center 70%; }
+    /* Textura de grano fino universal */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-attachment: fixed;
 }
 
 /* CONTENEDOR GENERAL */
 .pagina-cancion {
-    padding: 3rem 1.5rem 2rem;
+    padding: 4rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,398 +39,142 @@ body {
 
 .pagina-cancion > section {
     width: 100%;
-    max-width: 720px;
+    max-width: 45rem; /* ~720px */
     margin-bottom: 4rem;
 }
 
-.interpretacion-cancion,
-.titulo-con-nota {
-    margin-bottom: 4.5rem;
-}
-
-/* BLOQUE DE LECTURA */
+/* BLOQUE DE LECTURA: Mejoramos el aire interno */
 .bloque-lectura {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 3.2rem;
-    padding: 2.8rem 3rem;
+    max-width: 75rem; /* ~1200px */
+    margin: 0 auto 3.5rem;
+    padding: 3.5rem; /* Más espacio interior */
     background-color: var(--bg-bloque);
     border: 1px solid var(--borde-bloque);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(4px);
-    border-radius: 14px;
-}
-
-/* Información de la canción: sin aire superior */
-.bloque-lectura > .contenido-lectura > h2.visually-hidden {
-    margin-top: 0;
-}
-
-.interpretacion-cancion.bloque-lectura {
-    padding-top: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
 }
 
 .contenido-lectura {
-    max-width: 720px;
+    max-width: 45rem;
     margin: 0 auto;
 }
 
-/* TÍTULOS */
+/* TÍTULOS: Jerarquía clara */
 .pagina-cancion h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
+    font-family: var(--fuente-serif);
+    font-size: 2.25rem; /* Más grande y elegante */
     font-weight: 400;
-    color:#d6cfc2;
+    color: var(--color-acento);
     text-align: center;
-    margin-top: 5.2rem;
-    margin-bottom: 1.2rem
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
 }
 
 .pagina-cancion h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fuente-sans);
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: 0.02em;
-    color: #dcd4c5;
+    letter-spacing: 0.03em;
+    color: var(--color-acento);
+    margin-bottom: 1rem;
 }
 
-/* TEXTO */
+/* TEXTO: Optimizado para legibilidad */
 .pagina-cancion p {
-    font-size: 1.1125rem;
-    line-height: 1.65;
-    margin: 0 0 0.6rem 0;
-    color: #f5f5f5;
-}
-
-.pagina-cancion p:last-child {
-    margin-bottom: 0;
-}
-
-/* FICHA DE CANCIÓN */
-.datos-cancion {
-    font-size: 1.1125rem;
-}
-
-.datos-cancion {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-}
-
-.datos-cancion li {
-    font-size: 1.1125rem;
-    color: #ffffff;
-}
-
-.datos-cancion strong,
-.datos-cancion em {
-    font-size: 1.1125rem;
-    color: #dcd4c5;
-    font-style: normal;
-    font-weight: 500;
-}
-
-.tema-cancion {
-    margin-top: 0.2rem;
-}
-
-.tema-cancion p:last-child {
-    margin-bottom: 0;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* INTERPRETACIÓN (LETRA) */
-.interpretacion-cancion > article:first-of-type > h3 {
-    margin-top: 0.8rem;
-}
-
-
 .bloque-interpretacion {
-    margin-bottom: 3rem; 
-}
-
-.bloque-interpretacion:last-child {
-    margin-bottom: 0;
-}
-
-.bloque-interpretacion h3 {
-    margin-bottom: 0.2rem;
+    margin-bottom: 3.5rem; 
+    border-left: 2px solid rgba(214, 207, 194, 0.2); /* Línea sutil de guía */
+    padding-left: 1.5rem;
 }
 
 .bloque-interpretacion p {
-    font-size: 1.1125rem;
     font-style: italic;
-    line-height: 1.7;
-    margin: 0;
-    color: #fafafa;
-}
-
-.bloque-interpretacion p + p {
-    margin-top: 0.25rem;
-}
-
-/* META-INTERPRETACIÓN */
-.titulo-con-nota {
-    display: block;
-    margin-bottom: 1.2rem;
-}
-
-.titulo-con-nota h2 {
-    margin-top: 5.2rem;
-}
-
-.titulo-con-nota .nota-intro {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.55;
-    color: #cfc6b5;
-    max-width: 38rem;
-}
-
-.metainterpretacion-cancion h3:not(:first-of-type) {
-    margin-top: 3rem;
-}
-
-.metainterpretacion-cancion p {
-    margin-top: 0;
-    margin-bottom: 1.6rem;
-    color: #fafafa;
-}
-
-.metainterpretacion-cancion p + p {
-    margin-top: 1.6rem;
-}
-
-.metainterpretacion-cancion em {
-    font-style: italic;
-    color: #f0e6d2;
-}
-
-.metainterpretacion-cancion strong {
-    font-weight: 600;
     color: #ffffff;
 }
 
-/* HEADER */
+/* HEADER: Más estilizado */
 header {
-    background-color: rgba(0,0,0,0.85);
-    padding: 40px 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    position: relative;
-    z-index: 1;
-}
-
-.header-linea {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    padding: 2.5rem 1.5rem;
+    border-bottom: 1px solid var(--borde-bloque);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-family: var(--fuente-serif);
     font-style: italic;
-    color: #e5e2da;
+    color: var(--color-acento);
 }
 
-.acciones-header {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-/* BOTONES (NEUTROS) */
+/* BOTONES */
 .kofi-boton {
-    background: none;
-    border: 1px solid rgba(255, 248, 220, 0.6);
-    color: #fff8dc;
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 999px;
-    text-decoration: none;
-    line-height: 1;
+    border: 1px solid var(--color-acento);
+    color: var(--color-acento);
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.kofi-boton:hover {
+    background: var(--color-acento);
+    color: var(--bg-body);
 }
 
 .menu-boton {
-    background: none;
-    border: none;
+    background: transparent;
     color: #fff8dc;
-    font-size: 32px;
     cursor: pointer;
-    padding: 10px 15px;
     position: relative;
     z-index: 1100;
+    border: 0.0938rem solid #fff(255, 248, 220, 0.6); 
+    border-radius: 0.75rem;                     
+    padding: 0.5rem 1.2rem;                        
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.375rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.menu-boton:hover {
+    background:rgba(0,0,0,0.8);
+    transform: scale(1.05);
 }
 
 .menu-desplegable {
-  right: 25px;
+ top: 6.6rem;   
+ right: 1.5625rem
 }
 
-/* VOLVER AL GRUPO */
-.lanzamiento-nav {
-    margin: 20px 0 35px;
-    padding-left: 30px;
-}
-
-.lanzamiento-nav a {
-    text-decoration: none;
-    color: #dcd4c5;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-}
-
-/* GRUPOS – IDENTIDAD VISUAL */
-/* GOT7 */
-body.got7 {
-    --bg-body: #0f1f17;
-    --bg-bloque: #132a21;
-    --borde-bloque: rgba(0, 255, 170, 0.25);
-}
-
-/* SHINee */
-body.shinee {
-    --bg-body: #0e1f1f;
-    --bg-bloque: #132727;
-    --borde-bloque: rgba(160, 255, 240, 0.25);
-}
-
-/* EXO */
-body.exo {
-    --bg-body: #121212;
-    --bg-bloque: #1a1a1a;
-    --borde-bloque: rgba(220, 220, 220, 0.25);
-}
-
-/* THE ROSE */
-body.the-rose {
-    --bg-body: #0b0b0b;
-    --bg-bloque: #141414;
-    --borde-bloque: rgba(255, 255, 255, 0.15);
-}
+/* IDENTIDAD POR GRUPO */
+body.got7 { --color-acento: #00ffaa; }
+body.shinee { --color-acento: #a0fff0; }
+body.exo { --color-acento: #e0e0e0; }
+body.the-rose { --color-acento: #d6cfc2; }
 
 /* RESPONSIVE */
-
-@media (max-width: 1024px) {
-
-    .bloque-lectura {
-        max-width: 1000px;
-    }
-}
-
 @media (max-width: 768px) {
-    .pagina-cancion {
-        padding: 2.5rem 1.5rem 2rem;
-    }
-
     .bloque-lectura {
-        padding: 2.4rem 2rem;
+        padding: 2rem 1.5rem;
     }
-
-    header h1 {
-        font-size: 2.6rem;
-    }
-
-    .pagina-cancion h2 {
-        font-size: 1.75rem;
-    }
+    
+    header h1 { font-size: 1.8rem; }
+    .pagina-cancion h2 { font-size: 1.75rem; }
 }
 
 @media (max-width: 480px) {
-
-    html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    }
-
-    .pagina-cancion {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    }
-
-    .bloque-lectura {
-        width: 100%;
-        max-width: 100%;
-        padding: 1.6rem 1.2rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header {
-        padding: 22px 16px;
-    }
-
-    header h1 {
-        font-size: 1.4rem;
-        line-height: 1.15;
-        margin: 0;
-        padding: 0;
-    }
-
-    .acciones-header {
-        gap: 0.5rem;
-    }
-
-    .kofi-boton {
-        font-size: 0.95rem;
-        padding: 8px 12px;
-    }
-
-    .menu-boton {
-        font-size: 28px;
-        padding: 8px 12px;
-    }
-
-    .pagina-cancion > section {
-        margin-bottom: 3rem;
-    }
-
-    .pagina-cancion h2,
-    .titulo-con-nota{
-        font-size: 1.15rem;
-        margin: 2rem 0 1rem;
-    }
-
-    .bloque-interpretacion h3,
-    .metainterpretacion-cancion h3 {
-        font-size: 0.95rem;
-        margin-top: 2rem;
-    }
-
-    .pagina-cancion p,
-    .bloque-interpretacion p,
-    .metainterpretacion-cancion p,
-    .datos-cancion li,
-    .tema-cancion p {
-        font-size: 0.90rem;
-        line-height: 1.55;
-        hyphens: auto;
-        overflow-wrap: break-word;
-    }
-
-    .bloque-interpretacion {
-        margin-bottom: 2.4rem;
-    }
-
-    .bloque-interpretacion p {
-        font-style: italic;
-    }
-
-    .metainterpretacion-cancion p {
-        margin-bottom: 1.6rem;
-    }
-
-    .nota-intro {
-    font-size: 0.70rem;
-    line-height: 1.3;
-    max-width: 26rem;
-    margin: 0.35rem auto 0;
-    text-align: center;
-    opacity: 0.85;
-    }
+    .pagina-cancion p { font-size: 1rem; }
+    .nota-intro { font-size: 0.875rem; }
 }
