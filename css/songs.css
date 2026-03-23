@@ -140,8 +140,9 @@ body {
 
 /* HEADER */
 header {
-   background-color: rgba(5, 5, 5, 0.9); 
-    padding: 0.8rem 4%;
+    background-color: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(0.5rem); 
+    padding: 1rem 5%;
     border-bottom: 0.0625rem solid rgba(214, 207, 194, 0.1);
     position: fixed;
     top: 0;
@@ -161,10 +162,11 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem; 
+    font-size: 1.6rem; 
     font-family: var(--fuente-serif);
     font-style: italic;
     color: var(--color-acento);
+    letter-spacing: 0.05rem;
 }
 
 .acciones-header {
