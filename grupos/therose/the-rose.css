@@ -54,14 +54,13 @@ p em, .narracion em {
 }
 
 .narracion p {
-    margin-bottom: 1.4em; /* más separación entre párrafos */
+    margin-bottom: 1.4em; 
 }
 
 .narracion p + p {
-    text-indent: 1.2em; /* sangría desde el segundo párrafo */
+    text-indent: 1.2em; 
 }
 
-/* Más aire en párrafos de secciones informativas */
 .recuadro > section:not(.narracion) p {
     margin-bottom: 1.2em;
 }
@@ -160,7 +159,6 @@ header h1 {
     font-family: 'Playfair Display', serif;
     color: #e5e2da;
 }
-
 
 /* —— LINKS INTERNOS DEL HEADER —— */
 .links {

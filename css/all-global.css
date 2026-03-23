@@ -109,13 +109,16 @@ body.grupo {
 }
 
 body.grupo .top-buttons {
+    position: absolute;
+    top: 1.5rem;
     right: 1.5625rem; 
-    top: 2.5rem;
+    z-index: 4000;
+    
 }
 
 body.grupo .menu-desplegable {
+    top: 3.1rem;       
     right: 0 !important;
-    left: auto !important;
 }
 
 /* -----------------------------FOOTER----------------------------- */ 
