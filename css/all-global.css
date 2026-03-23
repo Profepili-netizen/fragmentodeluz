@@ -56,7 +56,7 @@ body {
 
 .menu-desplegable {
   top: var(--menu-top, 3.375rem); 
-  right: 0;
+  right: 0; 
 }
 
 .menu-desplegable.visible {
