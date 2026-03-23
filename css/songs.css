@@ -82,11 +82,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* --- AJUSTES ESPECÍFICOS PARA EL BLOQUE DE INFORMACIÓN --- */
-
-/* 1. Subir el título: "Información de la canción" */
-/* En el HTML tiene la clase .visually-hidden, si decides mostrarlo 
-   o si usas el h2 de interpretación, este ajuste quita el espacio sobrante */
 .bloque-lectura h2 {
     margin-top: 0 !important;
     padding-top: 0;
@@ -94,17 +89,16 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* 2. Eliminar los puntos de la info y limpiar la lista */
+/* DATOS-CANCIÓN */
 .datos-cancion {
-    list-style: none; /* Quita los puntos */
+    list-style: none; 
     padding: 0;
-    margin: 0 0 1.5rem 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem; /* Espaciado corto entre líneas */
+    gap: 0.4rem; 
 }
 
-/* DATOS-CANCIÓN */
 .datos-cancion li, 
 .tema-cancion p {
     font-family: var(--fuente-sans);
@@ -121,8 +115,12 @@ body {
 }
 
 .tema-cancion {
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
+    padding-top: 0;
+    border-top: none
 }
+
+
 
 /* TEXTO: Optimizado para legibilidad */
 .pagina-cancion p {
@@ -147,7 +145,7 @@ body {
 /* HEADER: Más estilizado */
 header {
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
     border-bottom: 1px solid var(--borde-bloque);
     position: sticky;
     top: 0;
@@ -158,8 +156,9 @@ header {
     display: flex;
     justify-content: space-between; /* Esto empuja los elementos a los extremos */
     align-items: center;
-    max-width: 1200px; /* Para que no se pegue tanto a los bordes en pantallas enormes */
-    margin: 0 auto;
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0;
 }
 
 header h1 {
