@@ -82,6 +82,48 @@ body {
     margin-bottom: 1rem;
 }
 
+/* --- AJUSTES ESPECÍFICOS PARA EL BLOQUE DE INFORMACIÓN --- */
+
+/* 1. Subir el título: "Información de la canción" */
+/* En el HTML tiene la clase .visually-hidden, si decides mostrarlo 
+   o si usas el h2 de interpretación, este ajuste quita el espacio sobrante */
+.bloque-lectura h2 {
+    margin-top: 0 !important;
+    padding-top: 0;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+/* 2. Eliminar los puntos de la info y limpiar la lista */
+.datos-cancion {
+    list-style: none; /* Quita los puntos */
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem; /* Espaciado corto entre líneas */
+}
+
+/* DATOS-CANCIÓN */
+.datos-cancion li, 
+.tema-cancion p {
+    font-family: var(--fuente-sans);
+    font-size: 1.1rem; /* Tamaño unificado */
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin: 0;
+}
+
+.datos-cancion strong {
+    color: var(--color-acento);
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.tema-cancion {
+    margin-top: 0.6rem;
+}
+
 /* TEXTO: Optimizado para legibilidad */
 .pagina-cancion p {
     font-size: 1.125rem;
