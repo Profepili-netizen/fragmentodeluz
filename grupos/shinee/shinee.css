@@ -158,32 +158,6 @@ header h1 {
     color: #e5e2da;
 }
 
-/* ——— BOTÓN MENÚ ——— */
-.menu-boton {
-    background: transparent;
-    color: #fff8dc;
-    cursor: pointer;
-    position: relative;
-    z-index: 1100;
-    border: 0.0938rem solid #fff(255, 248, 220, 0.6); 
-    border-radius: 0.75rem;                     
-    padding: 0.5rem 1.2rem;                        
-    display: inline-flex;
-    align-items: center;
-    font-size: 1.375rem;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.menu-boton:hover {
-    background:rgba(0,0,0,0.8);
-    transform: scale(1.05);
-}
-
-.menu-desplegable {
- top: 6.6rem;   
- right: 1.5625rem
-}
-
 /* Links header */
 .links {
     margin-top: 0.625rem;
