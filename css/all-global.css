@@ -5,6 +5,42 @@ body {
     margin: 0;
 }
 
+/* -----------------------------BOTONES FLOTANTES----------------------------- */
+.top-buttons {
+    position: absolute;
+    top: 1.125rem;
+    right: 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    z-index: 4000;
+}
+
+.menu-boton {
+    width: 3rem;
+    height: 3rem;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.menu-boton:hover {
+    background: rgba(0,0,0,0.8);
+    transform: scale(1.05);
+}
+
+.menu-desplegable {
+  top: 3.375rem;
+  right: 0;
+}
+
 /* -----------------------------MENÚ DESPLEGABLE----------------------------- */
 .menu-desplegable {
     display: none;
