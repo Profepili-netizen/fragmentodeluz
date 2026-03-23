@@ -41,13 +41,6 @@ body {
   right: 0;
 }
 
-body.exo .menu-desplegable,
-body.the-rose .menu-desplegable,
-body.shinee .menu-desplegable,
-body.got7 .menu-desplegable {
-  top: 6rem;
-}
-
 /* -----------------------------MENÚ DESPLEGABLE----------------------------- */
 .menu-desplegable {
     display: none;
@@ -89,6 +82,13 @@ body.got7 .menu-desplegable {
     color: #fff8dc;
     transform: scale(1.06);
 }
+
+body.exo .menu-desplegable,
+body.the-rose .menu-desplegable,
+body.shinee .menu-desplegable,
+body.got7 .menu-desplegable {
+  top: 4.5rem;
+} 
 
 /* -----------------------------SUBMENÚ----------------------------- */
 .submenu-lista {
