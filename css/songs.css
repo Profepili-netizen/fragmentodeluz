@@ -140,10 +140,9 @@ body {
 
 /* HEADER */
 header {
-    background-color: rgba(0,0,0,0.85);
-    backdrop-filter: blur(0.125rem);
-    padding: 0.8rem 2rem;
-    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
+   background-color: rgba(5, 5, 5, 0.9); 
+    padding: 0.8rem 4%;
+    border-bottom: 0.0625rem solid rgba(214, 207, 194, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -156,13 +155,13 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.6rem; 
+    font-size: 1.5rem; 
     font-family: var(--fuente-serif);
     font-style: italic;
     color: var(--color-acento);
@@ -173,6 +172,25 @@ header h1 {
     align-items: center; 
 }
 
+.kofi-boton {
+    height: 3rem; 
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    border: 1px solid var(--color-acento);
+    color: #fff;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    font-family: var(--fuente-sans);
+    font-weight: 700;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.kofi-boton:hover {
+    background: rgba(0,0,0,0.8);
+    transform: scale(1.05);
+}
+
 header .top-buttons {
     position: relative; 
     top: auto;
@@ -180,25 +198,6 @@ header .top-buttons {
     display: flex;
     align-items: center;
     gap: 0.75rem; 
-}
-
-.kofi-boton {
-    height: 3rem; 
-    display: flex;
-    align-items: center;
-    padding: 0 1.5rem;
-    border: 1px solid var(--color-acento);
-    color: var(--color-acento);
-    border-radius: 0.75rem;
-    text-decoration: none;
-    font-family: var(--fuente-sans);
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.kofi-boton:hover {
-    background: var(--color-acento);
-    color: #000;
 }
 
 /* IDENTIDAD POR GRUPO */
