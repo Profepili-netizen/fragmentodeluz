@@ -36,11 +36,6 @@ body {
     transform: scale(1.05);
 }
 
-.menu-desplegable {
-  top: 3.375rem;
-  right: 0;
-}
-
 /* -----------------------------MENÚ DESPLEGABLE----------------------------- */
 .menu-desplegable {
     display: none;
@@ -106,6 +101,21 @@ body {
 /* Ocultar artistas */
 .submenu .artista {
     display: none !important;
+}
+
+/* --- AJUSTE GLOBAL PARA PÁGINAS DE GRUPO --- */
+body.grupo {
+    --menu-top: 5.5rem; 
+}
+
+body.grupo .top-buttons {
+    right: 1.5625rem; 
+    top: 2.5rem;
+}
+
+body.grupo .menu-desplegable {
+    right: 0 !important;
+    left: auto !important;
 }
 
 /* -----------------------------FOOTER----------------------------- */ 
