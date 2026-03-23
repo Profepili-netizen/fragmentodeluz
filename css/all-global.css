@@ -54,6 +54,11 @@ body {
     border: 0.065rem solid rgba(255, 248, 220, 0.1);
 }
 
+.menu-desplegable {
+  top: var(--menu-top, 3.375rem); 
+  right: 0;
+}
+
 .menu-desplegable.visible {
     display: block;
 }
@@ -81,11 +86,6 @@ body {
 .menu-desplegable a:hover {
     color: #fff8dc;
     transform: scale(1.06);
-}
-
-body.grupo .menu-desplegable
-body.album .menu-desplegable {
-  top: 4.5rem; 
 }
 
 /* -----------------------------SUBMENÚ----------------------------- */

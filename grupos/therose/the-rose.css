@@ -1,5 +1,6 @@
 /* Tipografía base */
 body {
+    --menu-top: 6.5rem; 
     font-family: 'Inter', sans-serif;
     font-size: 1.0625rem;
     line-height: 1.6;
