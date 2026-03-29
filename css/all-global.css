@@ -6,6 +6,15 @@ body {
 }
 
 /* -----------------------------BOTONES FLOTANTES----------------------------- */
+.header-linea {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center !important;  
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .top-buttons {
     position: absolute;
     top: 1.125rem;

@@ -27,17 +27,23 @@ body.the-rose { --color-acento: #d6cfc2; }
 
 /* CONTENEDOR PRINCIPAL */
 .pagina-cancion {
-    padding-top: 8rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem; 
     max-width: 55rem; 
+    margin: 0 auto; 
 }
-
 .bloque-lectura {
     background-color: rgba(20, 20, 20, 0.75);
     padding: 3rem; 
     border-radius: 1rem;
     box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(0.25rem);
-    margin-bottom: 4rem;
+    margin: 2rem auto 4rem auto; 
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
 }
 
 h2 {
@@ -50,29 +56,14 @@ h2 {
     color: var(--color-acento, var(--color-acento-default)); 
     font-weight: 400;
 }
-.pagina-cancion h3 {
-    font-family: var(--fuente-sans);
-    font-style: italic;
-    font-size: 1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    color: var(--color-acento);
-    margin-bottom: 1rem;
-}
-
-.pagina-cancion p {
-    font-size: 1.125rem;
-    line-height: 1.65;
-    margin-bottom: 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
-}
 
 header {
     background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px); 
-    padding: 1.5rem 2.5rem; 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: fixed; 
+    backdrop-filter: blur(8px);
+    /* Usamos el mismo padding que en la página de grupos para consistencia */
+    padding: 2.5rem 1.5625rem !important; 
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -80,36 +71,32 @@ header {
     box-sizing: border-box;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.2rem; 
-    font-family: var(--fuente-serif);
-    font-style: normal; 
-    color: #e5e2da;
-    letter-spacing: 0.02rem;
-}
-
 .header-linea {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     width: 100%;
-    max-width: 100%; 
-    margin: 0 auto;
+    max-width: none; 
+    margin: 0;
 }
 
-.acciones-header {
-    display: flex;
-    align-items: center; 
+header h1 {
+    margin: 0;
+    font-size: 3rem !important; 
+    font-family: 'Playfair Display', serif;
+    color: #e5e2da;
+    line-height: 1.2;
 }
 
-header .top-buttons {
-    position: relative; 
-    top: auto;
-    right: auto;
+.top-buttons {
     display: flex;
     align-items: center;
-    gap: 1.5rem; 
+    gap: 1.2rem;
+}
+
+#menu-container {
+    display: flex;
+    align-items: center;
 }
 
 .kofi-boton {
@@ -164,10 +151,13 @@ header .top-buttons {
 }
 
 /* INTERPRETACIÓN (LETRA) */
+/* INTERPRETACIÓN (LETRA) */
 .bloque-interpretacion {
     margin-bottom: 3.5rem; 
     border-left: 2px solid rgba(255, 255, 255, 0.3); 
     padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .bloque-interpretacion h3 {
@@ -176,7 +166,9 @@ header .top-buttons {
     font-size: 1.15rem; 
     font-weight: 400;
     color: var(--color-acento, var(--color-acento-default));
-    margin: 0 0 0.2rem 0; 
+    margin: 0 !important; 
+    padding: 0;
+    line-height: 1.2;
 }
 
 .bloque-interpretacion p {
@@ -184,15 +176,70 @@ header .top-buttons {
     font-style: italic; 
     font-size: 0.95rem; 
     line-height: 1.4; 
-    color: rgba(255, 255, 255, 0.85); 
-    margin: 0; 
+    color: #ffffff;
+    margin: 0 !important; 
+    padding: 0;
     text-align: left;
 }
 
-.bloque-interpretacion p + p {
-    margin-top: 0.15rem;
+/* MI VERSION (LETRA) */
+.titulo-con-nota {
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
 
+.nota-intro {
+    display: block; 
+    font-family: var(--fuente-sans);
+    font-size: 0.9rem; 
+    font-style: italic;
+    color: var(--color-acento, var(--color-acento-default));
+    margin-top: 0.5rem;
+    opacity: 0.9;
+    letter-spacing: 0.02rem;
+}
+
+.pagina-cancion h3 {
+    font-family: var(--fuente-serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-acento);
+    margin: 2rem 0 0.2rem 0; 
+}
+
+.pagina-cancion p {
+    font-size: 1.15rem; 
+    line-height: 1.6;
+    color: #ffffff; 
+    margin-top: 0; 
+    margin-bottom: 1.5rem;
+}
+
+.pagina-cancion strong, 
+.bloque-lectura strong {
+    color: var(--color-acento, var(--color-acento-default));
+    font-style: italic; 
+    font-weight: 600; 
+}
+
+/* —— VOLVER AL ALBUM —— */
+.lanzamiento-nav {
+    margin: 20px 0 35px;
+    padding-left: 30px; /* lo empuja hacia el borde */
+}
+
+.lanzamiento-nav a {
+    text-decoration: none;
+    color: #dcd4c5;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+.lanzamiento-nav a:hover {
+    transform: scale(1.1); 
+    color: #ffe7b0;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
