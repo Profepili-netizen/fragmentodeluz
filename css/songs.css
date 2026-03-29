@@ -19,49 +19,37 @@ body {
     min-height: 100vh;
 }
 
+/* IDENTIDAD POR GRUPO */
+body.got7 { --color-acento: #00ffaa; }
+body.shinee { --color-acento: #a0fff0; }
+body.exo { --color-acento: #e0e0e0; }
+body.the-rose { --color-acento: #d6cfc2; }
+
 /* CONTENEDOR PRINCIPAL */
 .pagina-cancion {
-    position: relative;
-    padding: 40px 20px;
-    max-width: 800px; 
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    padding-top: 8rem; 
+    max-width: 55rem; 
 }
 
-/* RECUADRO DE LECTURA: */
 .bloque-lectura {
     background-color: rgba(20, 20, 20, 0.75);
-    padding: 35px 35px; 
-    border-radius: 16px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
-    margin: 0 auto 50px auto;
-    backdrop-filter: blur(4px);
-    width: 100%; 
-    box-sizing: border-box;
+    padding: 3rem; 
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(0.25rem);
+    margin-bottom: 4rem;
 }
 
-/* TÍTULOS DENTRO DEL BLOQUE */
-.bloque-lectura h2 {
+h2 {
     font-family: var(--fuente-serif);
     font-size: 1.9rem;
-    color: var(--color-acento, var(--color-acento-default));
     text-align: center;
-    margin: 30px 0 18px;
-    letter-spacing: 0.4px;
-}
-
-/* TÍTULOS: Jerarquía clara */
-.pagina-cancion h2 {
-    font-family: var(--fuente-serif);
-    font-size: 2.25rem; /* Más grande y elegante */
+    margin-top: 3.5rem; 
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.025rem;
+    color: var(--color-acento, var(--color-acento-default)); 
     font-weight: 400;
-    color: var(--color-acento);
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 1.5rem;
 }
-
 .pagina-cancion h3 {
     font-family: var(--fuente-sans);
     font-style: italic;
@@ -72,85 +60,33 @@ body {
     margin-bottom: 1rem;
 }
 
-.bloque-lectura {
-    background-color: rgba(20, 20, 20, 0.75);
-    padding: 2.1875rem 2.1875rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
-    margin: 0 auto 3.125rem auto;
-    backdrop-filter: blur(0.25rem);
-}
-
-.bloque-lectura h2 {
-    margin-top: 0 !important;
-    padding-top: 0;
-    text-align: left;
-    margin-bottom: 1.5rem;
-}
-
-/* DATOS-CANCIÓN */
-.datos-cancion {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem; 
-}
-
-.datos-cancion li, 
-.tema-cancion p {
-    font-family: var(--fuente-sans);
-    font-size: 1.1rem; /* Tamaño unificado */
-    line-height: 1.6;
-    color: var(--color-texto);
-    margin: 0;
-}
-
-.datos-cancion strong {
-    color: var(--color-acento);
-    font-weight: 500;
-    margin-right: 0.5rem;
-}
-
-.tema-cancion {
-    margin-top: 0.4rem;
-    padding-top: 0;
-    border-top: none
-}
-
-/* TEXTO: Optimizado para legibilidad */
 .pagina-cancion p {
     font-size: 1.125rem;
-    line-height: 1.8;
+    line-height: 1.65;
     margin-bottom: 1.5rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* INTERPRETACIÓN (LETRA) */
-.bloque-interpretacion {
-    margin-bottom: 3.5rem; 
-    border-left: 2px solid rgba(214, 207, 194, 0.2); /* Línea sutil de guía */
-    padding-left: 1.5rem;
-}
-
-.bloque-interpretacion p {
-    font-style: italic;
-    color: #ffffff;
-}
-
 header {
-    background-color: rgba(5, 5, 5, 0.85); 
-    backdrop-filter: blur(0.5rem); 
-    padding: 0.8rem 5%; 
-    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px); 
+    padding: 1.5rem 2.5rem; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed; 
     top: 0;
     left: 0;
-    right: 0; 
     width: 100%;
     z-index: 2000;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem; 
+    font-family: var(--fuente-serif);
+    font-style: normal; 
+    color: #e5e2da;
+    letter-spacing: 0.02rem;
 }
 
 .header-linea {
@@ -160,15 +96,6 @@ header {
     width: 100%;
     max-width: 100%; 
     margin: 0 auto;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.5rem; 
-    font-family: var(--fuente-serif);
-    font-style: italic;
-    color: var(--color-acento);
-    letter-spacing: 0.05rem;
 }
 
 .acciones-header {
@@ -205,11 +132,67 @@ header .top-buttons {
     transform: translateY(-2px); 
 }
 
-/* IDENTIDAD POR GRUPO */
-body.got7 { --color-acento: #00ffaa; }
-body.shinee { --color-acento: #a0fff0; }
-body.exo { --color-acento: #e0e0e0; }
-body.the-rose { --color-acento: #d6cfc2; }
+/* DATOS-CANCIÓN */
+.datos-cancion {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; 
+}
+
+.datos-cancion li, 
+.tema-cancion p {
+    font-family: var(--fuente-sans);
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin: 0;
+}
+
+.datos-cancion strong {
+    color: var(--color-acento);
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.tema-cancion {
+    margin-top: 0.4rem;
+    padding-top: 0;
+    border-top: none
+}
+
+/* INTERPRETACIÓN (LETRA) */
+.bloque-interpretacion {
+    margin-bottom: 3.5rem; 
+    border-left: 2px solid rgba(255, 255, 255, 0.3); 
+    padding-left: 1.5rem;
+}
+
+.bloque-interpretacion h3 {
+    font-family: var(--fuente-serif);
+    font-style: italic;
+    font-size: 1.15rem; 
+    font-weight: 400;
+    color: var(--color-acento, var(--color-acento-default));
+    margin: 0 0 0.2rem 0; 
+}
+
+.bloque-interpretacion p {
+    font-family: var(--fuente-serif); 
+    font-style: italic; 
+    font-size: 0.95rem; 
+    line-height: 1.4; 
+    color: rgba(255, 255, 255, 0.85); 
+    margin: 0; 
+    text-align: left;
+}
+
+.bloque-interpretacion p + p {
+    margin-top: 0.15rem;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
