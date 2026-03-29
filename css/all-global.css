@@ -11,17 +11,17 @@ body {
     justify-content: space-between; 
     align-items: center !important;  
     width: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 0 1.5625rem;
+    box-sizing: border-box;
 }
 
 .top-buttons {
-    position: absolute;
+    position: relative;
+    gap: 1rem;
+    align-items: center;
     top: 1.125rem;
     right: 1.25rem;
     display: flex;
-    gap: 0.75rem;
-    align-items: center;
     z-index: 4000;
 }
 
@@ -49,8 +49,8 @@ body {
 .menu-desplegable {
     display: none;
     position: absolute;
-    top: var(--menu-top, 3.375rem); 
-    right: 0; 
+    top: var(--menu-top, 5.5rem); 
+    right: 1.5625rem;
     background-color: rgba(0, 0, 0, 0.95);
     padding: 0.9375rem;
     border-radius: 0.625rem;

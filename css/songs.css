@@ -58,65 +58,55 @@ h2 {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px);
-    /* Usamos el mismo padding que en la página de grupos para consistencia */
-    padding: 2.5rem 1.5625rem !important; 
+    background-color: rgba(0,0,0,0.85);
+    backdrop-filter: blur(2px);
+    padding: 2.5rem 1.5625rem;
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: fixed !important; 
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
     z-index: 2000;
     box-sizing: border-box;
 }
 
-.header-linea {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
-    max-width: none; 
-    margin: 0;
-}
-
 header h1 {
     margin: 0;
-    font-size: 3rem !important; 
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
     color: #e5e2da;
-    line-height: 1.2;
-}
-
-.top-buttons {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-}
-
-#menu-container {
-    display: flex;
-    align-items: center;
 }
 
 .kofi-boton {
-    height: 2.8rem; 
-    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-flex; 
     align-items: center;
-    padding: 0 1.25rem;
-    border: 1px solid var(--color-acento);
-    color: #fff; 
+    justify-content: center;
     border-radius: 0.75rem;
-    text-decoration: none;
-    font-family: var(--fuente-sans);
+    cursor: pointer;
+    font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    font-style: italic;
+    color: #ffffff;
+    text-decoration: none;
+    border: 0.0938rem solid rgba(255, 248, 220, 0.6); 
+    padding: 0.5rem 1.2rem; 
+    transition: background 0.3s, transform 0.2s, border-color 0.3s;
 }
 
 .kofi-boton:hover {
-    background: var(--color-acento);
-    color: #fff;
-    transform: translateY(-2px); 
+    transform: scale(1.05); 
+    background: rgba(0, 0, 0, 0.7); 
+    color: #ffffff;
+}
+
+.top-buttons {
+    position: relative; 
+}
+
+.menu-desplegable {
+    right: 0 !important; 
+    top: 3.5rem !important; 
 }
 
 /* DATOS-CANCIÓN */
@@ -151,7 +141,6 @@ header h1 {
 }
 
 /* INTERPRETACIÓN (LETRA) */
-/* INTERPRETACIÓN (LETRA) */
 .bloque-interpretacion {
     margin-bottom: 3.5rem; 
     border-left: 2px solid rgba(255, 255, 255, 0.3); 
@@ -183,9 +172,9 @@ header h1 {
 }
 
 /* MI VERSION (LETRA) */
-.titulo-con-nota {
-    text-align: center;
-    margin-bottom: 2.5rem;
+.titulo-con-nota h2 {
+    margin-bottom: 0 !important;
+    line-height: 1.1;
 }
 
 .nota-intro {
@@ -194,30 +183,37 @@ header h1 {
     font-size: 0.9rem; 
     font-style: italic;
     color: var(--color-acento, var(--color-acento-default));
-    margin-top: 0.5rem;
+    margin-top: 0.2rem !important; 
     opacity: 0.9;
     letter-spacing: 0.02rem;
+    text-align: center; 
 }
 
-.pagina-cancion h3 {
+.titulo-con-nota {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.metainterpretacion-cancion h3 {
     font-family: var(--fuente-serif);
     font-style: italic;
     font-size: 1.4rem;
     font-weight: 400;
-    color: var(--color-acento);
-    margin: 2rem 0 0.2rem 0; 
+    color: var(--color-acento, var(--color-acento-default)); 
+    margin: 2.5rem 0 0 0 !important; 
+    line-height: 1.2;
 }
 
-.pagina-cancion p {
+.metainterpretacion-cancion p {
     font-size: 1.15rem; 
     line-height: 1.6;
     color: #ffffff; 
-    margin-top: 0; 
-    margin-bottom: 1.5rem;
+    margin-top: 0 !important; 
+    margin-bottom: 1.8rem;
+    text-align: left;
 }
 
-.pagina-cancion strong, 
-.bloque-lectura strong {
+.metainterpretacion-cancion strong {
     color: var(--color-acento, var(--color-acento-default));
     font-style: italic; 
     font-weight: 600; 
