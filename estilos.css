@@ -113,4 +113,15 @@ h1 {
     text-indent: 0;
 }
 
+/* Corrección específica para el botón del menú en la Home */
+.site-header .header-linea {
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 1.5625rem;
+}
+
+.site-header .top-buttons {
+    position: static; 
+    margin-top: 1.125rem; 
+}
 
