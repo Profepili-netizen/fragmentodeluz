@@ -114,20 +114,53 @@ body {
 
 /* --- AJUSTE GLOBAL PARA PÁGINAS DE GRUPO --- */
 body.grupo {
-    --menu-top: 5.5rem; 
+    --menu-top: 4.5rem; 
+}
+
+body.grupo .header-linea {
+    align-items: flex-start !important; /* Alinea el título y el botón por la parte superior */
+    padding-top: 1rem; /* Espacio extra arriba */
 }
 
 body.grupo .top-buttons {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5625rem; 
+    position: relative;
+    top: 0.5rem;
+    right: 0; 
+    margin-top: 0;
     z-index: 4000;
     
 }
 
 body.grupo .menu-desplegable {
-    top: 3.1rem;       
-    right: 0 !important;
+    top: 4rem;       
+    right: 1.5625rem !important;
+}
+
+/* LINKS */
+
+.links {
+    display: flex;
+    align-items: center; 
+    margin-top: 0.8rem;
+}
+
+.links a {
+    line-height: 1; 
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.links a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: 70%; 
+    width: 0.0625rem;
+    background-color: #ffe7b0;
+    opacity: 0.5;
 }
 
 /* -----------------------------FOOTER----------------------------- */ 
