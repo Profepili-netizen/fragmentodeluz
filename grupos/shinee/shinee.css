@@ -1,6 +1,5 @@
 /* Tipografía base */
 body {
-    --menu-top: 6.5rem; 
     font-family: 'Inter', sans-serif;
     font-size: 1.0625rem;
     line-height: 1.6;
@@ -11,7 +10,7 @@ body {
 }
 
 /* Títulos generales */
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Playfair Display', serif;
     line-height: 1.2;
     color: #2FAE9E;
@@ -118,15 +117,13 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/img/shinee/shinee-bg-desktop.webp");
+    background-image: url("/img/got7/got7-bg-desktop.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
     pointer-events: none;
     background-attachment: fixed;
-    background-position: center top !important; /* Prioriza la parte de arriba */
-    background-size: cover;
 }
 
 /* Ajustes de fondo por aspecto */

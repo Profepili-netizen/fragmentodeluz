@@ -1,6 +1,5 @@
 /* Tipografía base */
-body {
-    --menu-top: 6.5rem; 
+body { 
     font-family: 'Inter', sans-serif;
     font-size: 1.0625rem;
     line-height: 1.6;
@@ -11,7 +10,7 @@ body {
 }
 
 /* Títulos generales */
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Playfair Display', serif;
     line-height: 1.2;
     color: #dcd4c5;
@@ -137,56 +136,7 @@ body::before {
     body::before { background-position: center 70%; }
 }
 
-/* Header */
-header {
-    background-color: rgba(0,0,0,0.85);
-    backdrop-filter: blur(2px);
-    padding: 2.5rem 1.5625rem;
-    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
-    position: relative;
-    z-index: 1;
-}
-
-.header-linea {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    color: #e5e2da;
-}
-
-/* —— LINKS INTERNOS DEL HEADER —— */
-.links {
-    margin-top: 0.625rem;
-}
-
-.links a {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    color: #ffe7b0;
-    text-decoration: none;
-    margin-right: 0.75rem;
-    position: relative;
-    padding-right: 0.9375rem;
-}
-
-.links a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0.1875rem;
-    height: 80%;
-    width: 0.0625;
-    background-color: #ffe7b0;
-    opacity: 0.5;
-}
-
-/* —— APOYO KO-FI —— */
+/* Ko-fi */
 .apoyo-kofi {
     text-align: center;
     margin: 2.5rem 0;
@@ -207,7 +157,7 @@ header h1 {
     opacity: 0.7;
 }
 
-/* Discografía */
+/* ——— DISCOGRAFÍA ——— */
 .discografia {
     padding-left: 0;
     text-align: center;
