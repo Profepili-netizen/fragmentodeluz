@@ -114,51 +114,84 @@ body {
 
 /* --- AJUSTE GLOBAL PARA PÁGINAS DE GRUPO --- */
 body.grupo {
-    --menu-top: 4.5rem; 
+    --menu-top: 4rem; 
 }
 
-body.grupo .header-linea {
-    align-items: flex-start !important; /* Alinea el título y el botón por la parte superior */
-    padding-top: 1rem; /* Espacio extra arriba */
-}
-
-body.grupo .top-buttons {
+body.grupo header, 
+body.album header, 
+body.cancion header {
+    background-color: rgba(0,0,0,0.85);
+    backdrop-filter: blur(0.125rem);
+    padding: 2.5rem 1.5625rem;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     position: relative;
-    top: 0.5rem;
-    right: 0; 
-    margin-top: 0;
-    z-index: 4000;
-    
+    z-index: 1;
 }
 
-body.grupo .menu-desplegable {
-    top: 4rem;       
-    right: 1.5625rem !important;
+
+body.grupo .header-linea, 
+body.album .header-linea, 
+body.cancion .header-linea {
+    align-items: center !important; 
+    padding: 0;
 }
 
-/* LINKS */
-
-.links {
-    display: flex;
-    align-items: center; 
-    margin-top: 0.8rem;
-}
-
-.links a {
-    line-height: 1; 
-    display: flex;
-    align-items: center;
+body.grupo .top-buttons, 
+body.album .top-buttons, 
+body.cancion .top-buttons {
     position: relative;
+    top: 0; 
+    right: 0;
+    display: flex;
 }
 
-.links a:not(:last-child)::after {
+
+body.grupo .menu-desplegable, 
+body.album .menu-desplegable, 
+body.cancion .menu-desplegable {
+    top: 100%;
+    margin-top: 0.5rem;
+    right: 0 !important;
+}
+
+
+body.grupo header h1, 
+body.album header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #e5e2da;
+    line-height: 1; /* Esto pega los links al nombre */
+}
+
+body.grupo .links, 
+body.album .links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+body.grupo .links a, 
+body.album .links a {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #ffe7b0;
+    text-decoration: none;
+    position: relative;
+    padding-right: 0.9rem;
+    line-height: 1;
+}
+
+
+body.grupo .links a:not(:last-child)::after, 
+body.album .links a:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 50%; 
-    transform: translateY(-50%); 
-    height: 70%; 
-    width: 0.0625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 1px;
     background-color: #ffe7b0;
     opacity: 0.5;
 }

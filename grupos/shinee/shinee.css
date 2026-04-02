@@ -125,6 +125,8 @@ body::before {
     z-index: -1;
     pointer-events: none;
     background-attachment: fixed;
+    background-position: center top !important; /* Prioriza la parte de arriba */
+    background-size: cover;
 }
 
 /* Ajustes de fondo por aspecto */
@@ -134,55 +136,6 @@ body::before {
 
 @media (max-aspect-ratio: 4/3) {
     body::before { background-position: center 70%; }
-}
-
-/* ——— HEADER ——— */
-header {
-    background-color: rgba(0,0,0,0.85);
-    backdrop-filter: blur(0.125rem);
-    padding: 2.5rem 1.5625rem;
-    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
-    position: relative;
-    z-index: 1;
-}
-
-.header-linea {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    color: #e5e2da;
-}
-
-/* Links header */
-.links {
-    margin-top: 0.625rem;
-}
-
-.links a {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    color: #ffe7b0;
-    text-decoration: none;
-    margin-right: 0.75rem;
-    position: relative;
-    padding-right: 0.9375rem;
-}
-
-.links a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0.1875;
-    height: 80%;
-    width: 0.0625rem;
-    background-color: #ffe7b0;
-    opacity: 0.5;
 }
 
 /* Ko-fi */
