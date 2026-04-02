@@ -119,7 +119,7 @@ body.grupo {
 
 body.grupo header, 
 body.album header, 
-body.cancion header {
+body.songs header {
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
     padding: 2.5rem 1.5625rem;
@@ -128,17 +128,26 @@ body.cancion header {
     z-index: 1;
 }
 
+body.grupo header h1, 
+body.album header h1,
+body.songs header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #e5e2da;
+    line-height: 1; 
+}
 
 body.grupo .header-linea, 
 body.album .header-linea, 
-body.cancion .header-linea {
+body.songs .header-linea {
     align-items: center !important; 
     padding: 0;
 }
 
 body.grupo .top-buttons, 
 body.album .top-buttons, 
-body.cancion .top-buttons {
+body.songs .top-buttons {
     position: relative;
     top: 0; 
     right: 0;
@@ -148,7 +157,7 @@ body.cancion .top-buttons {
 
 body.grupo .menu-desplegable, 
 body.album .menu-desplegable, 
-body.cancion .menu-desplegable {
+body.songs .menu-desplegable {
     top: 100%;
     margin-top: 0.5rem;
     right: 0 !important;
