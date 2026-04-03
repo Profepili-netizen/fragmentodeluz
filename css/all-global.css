@@ -129,22 +129,26 @@ body.songs header {
 }
 
 body.grupo header h1, 
-body.album header h1 {
+body.album header h1,
+body.songs header h1 {
     margin: 0;
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
+    font-style: italic;
     color: #e5e2da;
     line-height: 1; 
 }
 
 body.grupo .header-linea, 
-body.album .header-linea {
+body.album .header-linea,
+body.songs .header-linea {
     align-items: center !important; 
     padding: 0;
 }
 
 body.grupo .top-buttons, 
-body.album .top-buttons {
+body.album .top-buttons,
+body.songs .top-buttons {
     position: relative;
     top: 0; 
     right: 0;
@@ -153,7 +157,8 @@ body.album .top-buttons {
 
 
 body.grupo .menu-desplegable, 
-body.album .menu-desplegable {
+body.album .menu-desplegable,
+body.songs .menu-desplegable {
     top: 100%;
     margin-top: 0.5rem;
     right: 0 !important;
