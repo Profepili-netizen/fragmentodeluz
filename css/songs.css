@@ -1,27 +1,21 @@
-:root {
-    --bg-body: #0d121d; 
-    --color-texto: #f5f5f5;
-    --color-acento-default: #d6cfc2;
-    --fuente-serif: 'Playfair Display', serif;
-    --fuente-sans: 'Inter', sans-serif;
-}
 
+/* 1. BASE */
 body {
-    font-family: var(--fuente-sans);
+    background-color: #0a0f18;
+    font-family: 'Inter', sans-serif;
     font-size: 1.0625rem; 
     line-height: 1.6;
-    color: var(--color-texto);
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: var(--bg-body);
 }
 
 /* IDENTIDAD POR GRUPO */
-body.got7 { --color-acento: #00ffaa; }
-body.shinee { --color-acento: #a0fff0; }
-body.exo { --color-acento: #e0e0e0; }
-body.the-rose { --color-acento: #d6cfc2; }
+body.exo { --color-acento: #9CA0A6; }
+body.got7 { --color-acento: #9fcac2; }
+body.shinee { --color-acento: #2FAE9E; }
+body.the-rose { --color-acento: #dcd4c5; }
 
 /* Header */
 body.songs header {
@@ -47,7 +41,7 @@ body.songs header {
 }
 
 .kofi-boton {
-    font-family: var(--fuente-sans);
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     border: 1px solid var(--color-acento);
     background: rgba(0,0,0,0.6);
@@ -80,10 +74,11 @@ main {
     margin: 0 auto; 
 }
 .bloque-lectura {
-    background-color: rgba(20, 20, 20, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 2.1875rem;
     border-radius: 1rem;
-    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.25rem);
     margin: 0 auto 3.125rem auto;
     width: 100%; 
@@ -91,13 +86,13 @@ main {
 }
 
 h2 {
-    font-family: var(--fuente-serif);
+    font-family: 'Playfair Display', serif;
     font-size: 1.9rem;
     text-align: center;
     margin-top: 6.5rem; 
     margin-bottom: 1.8rem;
     letter-spacing: 0.025rem;
-    color: var(--color-acento, var(--color-acento-default)); 
+    color: var(--color-acento);
     font-weight: 400;
 }
 
@@ -120,15 +115,17 @@ h2 {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem; 
+    gap: 0.4rem; 
+    font-size: 1.25rem; 
+    opacity: 0.85;
 }
 
 .datos-cancion li, 
 .tema-cancion p {
-    font-family: var(--fuente-sans);
-    font-size: 1rem; 
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
     line-height: 1.6;
-    color: #ffffff;
+    color: #f5f5f5;
     margin: 0;
 }
 
@@ -136,7 +133,7 @@ h2 {
     color: var(--color-acento);
     font-weight: 600;
     margin-right: 0.5rem;
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
 }
 
 .tema-cancion {
@@ -152,30 +149,27 @@ h2 {
     padding-left: 1.2rem;
     display: flex;
     flex-direction: column;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
 }
 
 .bloque-interpretacion h3 {
-    font-family: var(--fuente-serif);
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.25rem;
-    font-weight: 300;
-    color: var(--color-acento, var(--color-acento-default)); 
+    font-weight: 400;
+    color: var(--color-acento);
     margin: 0 !important; 
     line-height: 1.2;
     letter-spacing: 0.01rem;
 }
 
 .bloque-interpretacion p {
-    font-family: var(--fuente-serif); 
+    font-family: 'Playfair Display', serif; 
     font-style: italic;
-    font-weight: 300 !important; 
+    font-weight: 400 !important; 
     margin: 0; 
     padding: 0;
-    color: #e0e0e0;
-    font-size: 1.05rem; 
+    color: #f5f5f5;
+    font-size: 1.1rem; 
     line-height: 1.4;
 }
 
@@ -188,14 +182,16 @@ h2 {
 
 .nota-intro {
     display: block; 
-    font-family: var(--fuente-sans);
-    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
     font-style: italic; 
-    color: var(--color-acento, var(--color-acento-default));
-    opacity: 0.65;
-    margin-top: 0.5rem; 
-    letter-spacing: 0.05rem;
+    color: var(--color-acento);
+    opacity: 0.7;
+    margin: 0.5rem auto 0;
+    max-width: 80%;
     text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.05rem;
     text-transform: lowercase;
 }
 
@@ -205,26 +201,26 @@ h2 {
 }
 
 .metainterpretacion-cancion h3 {
-    font-family: var(--fuente-serif);
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    color: var(--color-acento, var(--color-acento-default)); 
+    color: var(--color-acento); 
     margin: 2.5rem 0 0 0 !important; 
-    line-height: 1.2;
 }
 
 .metainterpretacion-cancion p {
-    font-size: 1.15rem; 
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem; 
     line-height: 1.6;
-    color: #ffffff; 
+    color: #f5f5f5; 
     margin-top: 0 !important; 
     margin-bottom: 1.8rem;
     text-align: left;
 }
 
 .metainterpretacion-cancion strong {
-    color: var(--color-acento, var(--color-acento-default));
+    color: var(--color-acento);
     font-style: italic; 
     font-weight: 600; 
 }
@@ -232,7 +228,7 @@ h2 {
 /* —— VOLVER AL ALBUM —— */
 .lanzamiento-nav {
     margin: 20px 0 35px;
-    padding-left: 30px; /* lo empuja hacia el borde */
+    padding-left: 30px; 
 }
 
 .lanzamiento-nav a {
