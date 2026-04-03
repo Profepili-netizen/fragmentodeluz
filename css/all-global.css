@@ -182,7 +182,6 @@ body.album .links a {
     line-height: 1;
 }
 
-
 body.grupo .links a:not(:last-child)::after, 
 body.album .links a:not(:last-child)::after {
     content: "";

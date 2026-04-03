@@ -183,15 +183,15 @@ h2 {
 .nota-intro {
     display: block; 
     font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-style: italic; 
     color: var(--color-acento);
     opacity: 0.7;
-    margin: 0.5rem auto 0;
+    margin: 0.8rem auto 0;
     max-width: 80%;
     text-align: center;
-    line-height: 1.4;
-    letter-spacing: 0.05rem;
+    line-height: 1.5;
+    letter-spacing: 0.01rem;
     text-transform: lowercase;
 }
 
@@ -244,16 +244,59 @@ h2 {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-    .bloque-lectura {
-        padding: 2rem 1.5rem;
-    }
-    
-    header h1 { font-size: 1.8rem; }
-    .pagina-cancion h2 { font-size: 1.75rem; }
+
+/* TABLETS (Menos de 1024px) */
+@media (max-width: 1024px) {
+    .pagina-cancion { padding-top: 11rem; }
+    h2 { margin-top: 5rem; }
+    .interpretacion-cancion, .metainterpretacion-cancion { margin-top: 7rem; }
 }
 
+/* CELULARES (Menos de 768px) */
+@media (max-width: 768px) {
+    body.songs header {
+        padding: 2rem 1.25rem;
+        min-height: 100px;
+    }
+    
+    .pagina-cancion { padding-top: 9rem; }
+    
+    h2 { 
+        font-size: 1.6rem; 
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .interpretacion-cancion, .metainterpretacion-cancion { 
+        margin-top: 5rem; 
+        padding-top: 2rem;
+    }
+
+    .bloque-lectura { padding: 1.5rem; }
+    
+    .datos-cancion li, .tema-cancion p, .metainterpretacion-cancion p {
+        font-size: 1.05rem; 
+    }
+
+    .bloque-interpretacion h3, .metainterpretacion-cancion h3 {
+        font-size: 1.15rem;
+    }
+}
+
+/* CELULARES PEQUEÑOS (Menos de 480px) */
 @media (max-width: 480px) {
-    .pagina-cancion p { font-size: 1rem; }
-    .nota-intro { font-size: 0.875rem; }
+    body.songs header {
+        min-height: 90px;
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 { font-size: 1.5rem; } /* Achicamos el título del header */
+
+    .pagina-cancion { padding-top: 8rem; }
+
+    .bloque-lectura { padding: 1.2rem; }
+
+    .datos-cancion strong { font-size: 1.05rem; }
+    
+    .nota-intro { max-width: 95%; font-size: 0.6rem; }
 }
