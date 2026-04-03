@@ -129,8 +129,7 @@ body.songs header {
 }
 
 body.grupo header h1, 
-body.album header h1, 
-body.songs header h1{
+body.album header h1 {
     margin: 0;
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
