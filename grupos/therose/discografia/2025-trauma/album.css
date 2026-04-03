@@ -7,9 +7,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #0f1a1e;
 }
 
+/* Títulos generales */
 h2, h3 {
     font-family: 'Playfair Display', serif;
     line-height: 1.2;
@@ -34,8 +34,7 @@ p {
 
 /* —— CONTENEDOR PRINCIPAL —— */
 main {
-    position: relative;
-    padding: 2.5rem 125rem;
+    padding: 2.5rem 1.25rem;
     max-width: 50rem;
     margin: auto;
 }
@@ -63,7 +62,7 @@ main {
     border-radius: 1rem;
     box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
     margin: 0 auto 3.125rem auto;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0.25rem);
 }
 
 .narracion {
