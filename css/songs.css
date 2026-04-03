@@ -8,7 +8,7 @@
 
 body {
     font-family: var(--fuente-sans);
-    font-size: 17px; 
+    font-size: 1.0625rem; 
     line-height: 1.6;
     color: var(--color-texto);
     margin: 0;
@@ -60,41 +60,44 @@ h2 {
 }
 
 /* Header */
-.kofi-button {
-    width: 3rem;
-    height: 3rem;
-    background: rgba(255, 255, 255, 0.05); /* Fondo sutil */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.75rem; 
-    cursor: pointer;
-    font-size: 1.2rem;
-    color: var(--color-acento, var(--color-acento-default)); 
-    transition: all 0.3s ease;
-    text-decoration: none;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+    background-color: var(--bg-body); 
 }
 
-.kofi-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: scale(1.05);
-    border-color: var(--color-acento);
+
+.header-linea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5625rem;
 }
 
 .top-buttons {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    position: relative;
+    gap: 1rem; /* Espacio entre ellos */
 }
 
-header h1 {
-    font-size: 3rem;
-    font-family: var(--fuente-serif);
-    color: #e5e2da;
-    line-height: 1;
-    margin: 0;
+.kofi-boton {
+    text-decoration: none;
+    font-family: var(--fuente-sans);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-acento);
+    border: 1px solid var(--color-acento);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.75rem;
+    transition: 0.3s;
+}
+
+.kofi-boton:hover {
+    background: var(--color-acento);
+    color: #000;
 }
 
 @media (max-width: 600px) {
