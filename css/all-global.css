@@ -11,7 +11,7 @@ body {
     justify-content: space-between; 
     align-items: center !important;  
     width: 100%;
-    padding: 0 1.5625rem;
+    padding: 1.5625rem;
     box-sizing: border-box;
 }
 
@@ -279,19 +279,19 @@ footer a:hover {
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.cookie-buttons .btn-aceptar {
+.cookie-buttons .cookie-accept {
     border-color: #e6e6e6;
     font-weight: 500;
 }
 
-.cookie-buttons .btn-aceptar:hover {
+.cookie-buttons .cookie-accept:hover {
     background-color: rgba(255,255,255,0.1);
 }
 
-.cookie-buttons .btn-rechazar {
+.cookie-buttons .cookie-reject {
     opacity: 0.75;
 }
 
-.cookie-buttons .btn-rechazar:hover {
+.cookie-buttons .cookie-reject:hover {
     opacity: 1;
 }
