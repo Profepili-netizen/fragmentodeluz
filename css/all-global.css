@@ -118,7 +118,8 @@ body.grupo {
 }
 
 body.grupo header, 
-body.album header {
+body.album header,
+body.songs header {
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
     padding: 2.5rem 1.5625rem;
@@ -128,7 +129,8 @@ body.album header {
 }
 
 body.grupo header h1, 
-body.album header h1 {
+body.album header h1, 
+body.songs header h1{
     margin: 0;
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
