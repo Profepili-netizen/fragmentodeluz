@@ -112,14 +112,13 @@ body {
     display: none !important;
 }
 
-/* --- AJUSTE GLOBAL PARA PÁGINAS DE GRUPO --- */
+/* --- AJUSTE GLOBAL PARA PÁGINAS DE GRUPO/ALBUM --- */
 body.grupo {
     --menu-top: 4rem; 
 }
 
 body.grupo header, 
-body.album header, 
-body.songs header {
+body.album header {
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
     padding: 2.5rem 1.5625rem;
@@ -129,8 +128,7 @@ body.songs header {
 }
 
 body.grupo header h1, 
-body.album header h1,
-body.songs header h1 {
+body.album header h1 {
     margin: 0;
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
@@ -139,15 +137,13 @@ body.songs header h1 {
 }
 
 body.grupo .header-linea, 
-body.album .header-linea, 
-body.songs .header-linea {
+body.album .header-linea {
     align-items: center !important; 
     padding: 0;
 }
 
 body.grupo .top-buttons, 
-body.album .top-buttons, 
-body.songs .top-buttons {
+body.album .top-buttons {
     position: relative;
     top: 0; 
     right: 0;
@@ -156,22 +152,12 @@ body.songs .top-buttons {
 
 
 body.grupo .menu-desplegable, 
-body.album .menu-desplegable, 
-body.songs .menu-desplegable {
+body.album .menu-desplegable {
     top: 100%;
     margin-top: 0.5rem;
     right: 0 !important;
 }
 
-
-body.grupo header h1, 
-body.album header h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    color: #e5e2da;
-    line-height: 1; /* Esto pega los links al nombre */
-}
 
 body.grupo .links, 
 body.album .links {
