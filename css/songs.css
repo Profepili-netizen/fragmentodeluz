@@ -14,8 +14,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: var(--bg-body);     
-    min-height: 100vh;
+    background-color: var(--bg-body);
 }
 
 /* IDENTIDAD POR GRUPO */
@@ -23,41 +22,6 @@ body.got7 { --color-acento: #00ffaa; }
 body.shinee { --color-acento: #a0fff0; }
 body.exo { --color-acento: #e0e0e0; }
 body.the-rose { --color-acento: #d6cfc2; }
-
-/* CONTENEDOR PRINCIPAL */
-main {
-    padding: 2.5rem 1.25rem;
-    max-width: 50rem;
-    margin: auto;
-}
-
-.pagina-cancion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10rem; 
-    max-width: 55rem; 
-    margin: 0 auto; 
-}
-.bloque-lectura {
-    background-color: rgba(20, 20, 20, 0.75);
-    padding: 2.1875rem 2.1875rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(0.25rem);
-    margin: 0 auto 3.125rem auto;
-}
-
-h2 {
-    font-family: var(--fuente-serif);
-    font-size: 1.9rem;
-    text-align: center;
-    margin-top: 3.5rem; 
-    margin-bottom: 1.8rem;
-    letter-spacing: 0.025rem;
-    color: var(--color-acento, var(--color-acento-default)); 
-    font-weight: 400;
-}
 
 /* Header */
 body.songs header {
@@ -71,6 +35,12 @@ body.songs header {
     padding: 2.5rem 1.5625rem; 
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box; 
+}
+
+.top-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .kofi-boton {
@@ -91,17 +61,45 @@ body.songs header {
     transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-        max-width: 70%;
-    }
-    
-    .kofi-button, .menu-boton {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1rem;
-    }
+/* CONTENEDOR PRINCIPAL */
+main {
+    padding: 2.5rem 1.25rem;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.pagina-cancion {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.5rem;
+    align-items: center; 
+    max-width: 55rem; 
+    margin: 0 auto; 
+}
+.bloque-lectura {
+    background-color: rgba(20, 20, 20, 0.75);
+    padding: 2.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(0.25rem);
+    margin: 0 auto 3.125rem auto;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: var(--fuente-serif);
+    font-size: 1.9rem;
+    text-align: center;
+    margin-top: 6.5rem; 
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.025rem;
+    color: var(--color-acento, var(--color-acento-default)); 
+    font-weight: 400;
+}
+
+.pagina-cancion h2:first-of-type {
+    margin-top: 0; 
 }
 
 /* DATOS-CANCIÓN */
@@ -148,22 +146,17 @@ body.songs header {
     font-family: var(--fuente-serif);
     font-style: italic;
     font-size: 1.15rem; 
-    font-weight: 400;
-    color: var(--color-acento, var(--color-acento-default));
+    color: var(--color-acento);
     margin: 0 !important; 
     padding: 0;
-    line-height: 1.2;
 }
 
 .bloque-interpretacion p {
     font-family: var(--fuente-serif); 
     font-style: italic; 
     font-size: 0.95rem; 
-    line-height: 1.4; 
-    color: #ffffff;
     margin: 0 !important; 
-    padding: 0;
-    text-align: left;
+    color: #ffffff;
 }
 
 /* MI VERSION (LETRA) */
