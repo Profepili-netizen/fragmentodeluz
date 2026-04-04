@@ -37,50 +37,6 @@ p {
     color: #f5f5f5;
 }
 
-.narracion {
-    font-family: 'Inter', sans-serif;
-    opacity: 0.95;
-    hyphens: auto;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-bottom: clamp(2rem, 8vh, 3.8rem);
-    color: #f5f5f5;
-}
-
-p em, .narracion em {
-    font-style: italic;
-    color: #dcd4c5;
-}
-
-.narracion p {
-    margin-bottom: 1.4em; 
-}
-
-.narracion p + p {
-    text-indent: 1.2em; 
-}
-
-.recuadro > section:not(.narracion) p {
-    margin-bottom: 1.2em;
-}
-
-.mini-introduccion p {
-    margin-bottom: 1.4em;
-}
-
-.ficha-rapida {
-    margin-bottom: clamp(2.5rem, 7vh, 3.75rem);
-}
-
-.recuadro > section ul li {
-    margin-bottom: 0.7em;
-}
-
-.recuadro > section ul li:last-child {
-    margin-bottom: 0;
-}
-
-/* Listas */
 ul, li {
     list-style: none;
     padding-left: 0;
@@ -92,26 +48,18 @@ strong {
     font-weight: 600;
 }
 
-/* Contenedor principal */
+p em, .narracion em {
+    font-style: italic;
+    color: #dcd4c5;
+}
+
+/* ——— 2. ESTRUCTURA Y FONDO ——— */
 main {
     padding: 2.5rem clamp(1rem, 5vw, 1.25rem);
     max-width: 50rem;
     margin: auto;
 }
 
-/* Recuadro narrativo */
-.recuadro {
-    background-color: rgba(20, 20, 20, 0.75);
-    padding: clamp(1.25rem, 5vw, 2.1875rem);
-    border-radius: 1rem;
-    border: 0.0625rem solid rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(0.25rem);
-    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
-    width: 100%; 
-    box-sizing: border-box;
-}
-
-/* Fondo */
 body::before {
     content: "";
     position: fixed;
@@ -137,28 +85,58 @@ body::before {
     body::before { background-position: center 70%; }
 }
 
-/* Ko-fi */
-.apoyo-kofi {
-    text-align: center;
-    margin: clamp(1.5rem, 5vh, 2.5rem) 0;
+/* ——— 3. COMPONENTE: RECUADRO Y CONTENIDO INTERNO ——— */
+.recuadro {
+    background-color: rgba(20, 20, 20, 0.75);
+    padding: clamp(1.25rem, 5vw, 2.1875rem);
+    border-radius: 1rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(0.25rem);
+    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
+    width: clamp(88%, 92%, 95%); 
+    max-width: 55rem;
+    box-sizing: border-box;
 }
 
-.apoyo-kofi p {
-    font-size: 0.95em;
-    line-height: 1.6;
+.mini-introduccion p {
+    margin-bottom: 1.4em;
 }
 
-.apoyo-kofi a {
-    font-style: italic;
-    text-decoration: none;
-    color: rgba(220, 212, 197, 0.85);
+.ficha-rapida {
+    margin-bottom: clamp(2.5rem, 7vh, 3.75rem);
 }
 
-.apoyo-kofi a:hover {
-    opacity: 0.7;
+.narracion {
+    font-family: 'Inter', sans-serif;
+    opacity: 0.95;
+    hyphens: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: clamp(2rem, 8vh, 3.8rem);
+    color: #f5f5f5;
 }
 
-/* ——— DISCOGRAFÍA ——— */
+.narracion p {
+    margin-bottom: 1.4em; 
+}
+
+.narracion p + p {
+    text-indent: 1.2em; 
+}
+
+.recuadro > section:not(.narracion) p {
+    margin-bottom: 1.2em;
+}
+
+.recuadro > section ul li {
+    margin-bottom: 0.7em;
+}
+
+.recuadro > section ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* ——— 4. SECCIONES ESPECÍFICAS ——— */
 .discografia {
     padding-left: 0;
     text-align: center;
@@ -185,4 +163,25 @@ body::before {
     transform: scale(1.08); 
     color: #fff8dc;
 }
+
+.apoyo-kofi {
+    text-align: center;
+    margin: clamp(1.5rem, 5vh, 2.5rem) 0;
+}
+
+.apoyo-kofi p {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.apoyo-kofi a {
+    font-style: italic;
+    text-decoration: none;
+    color: rgba(220, 212, 197, 0.85);
+}
+
+.apoyo-kofi a:hover {
+    opacity: 0.7;
+}
+
 

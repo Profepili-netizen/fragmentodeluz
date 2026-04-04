@@ -66,11 +66,6 @@ body::before {
     body::before { background-position: center 70%; }
 }
 
-.menu-desplegable { 
-    position: relative; 
-}
-
-
 /* —— FICHA TÉCNICA —— */
 .ficha-tecnica {
     font-size: clamp(0.85rem, 2vw, 0.9rem);
