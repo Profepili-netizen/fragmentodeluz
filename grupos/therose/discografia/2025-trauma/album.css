@@ -34,7 +34,7 @@ p {
 
 /* —— CONTENEDOR PRINCIPAL —— */
 main {
-    padding: clamp(1.5rem, 5vh, 2.5rem) clamp(1rem, 5vw, 1.25rem);
+    padding: clamp(1.5rem, 5vh, 2.5rem);
     max-width: 50rem;
     margin: auto;
 }
@@ -60,10 +60,10 @@ main {
     background-color: rgba(20, 20, 20, 0.75);
     padding: clamp(1.25rem, 5vw, 2.1875rem);
     border-radius: 1rem;
-    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
-    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(0.25rem);
-    width: 100%;
+    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
+    width: 100%; 
     box-sizing: border-box;
 }
 
@@ -161,15 +161,22 @@ body::before {
     color: #fff8dc;
 }
 
-/* —— VOLVER AL GRUPO —— */
+/* NAVEGACIÓN INFERIOR */
 .lanzamiento-nav {
-    margin: 1.25rem 0 2.1875rem;
-    padding-left: clamp(0.5rem, 3vw, 1.875rem); 
+    margin: 20px 0 35px;
+    padding-left: clamp(0rem, 5vw, 30px);
+    text-align: clamp(center, -100%, left);
 }
 
 .lanzamiento-nav a {
     text-decoration: none;
-    color: #dcd4c5;
+    color: var(--color-acento);
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    transition: color 0.3s, transform 0.2s;
+}
+
+.lanzamiento-nav a:hover {
+    transform: scale(1.05); 
+    color: #ffe7b0;
 }
