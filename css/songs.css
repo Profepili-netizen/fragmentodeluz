@@ -25,8 +25,8 @@ body.songs header {
     z-index: 5000;
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
-    padding: clamp(1.5rem, 6vw, 4.5rem) clamp(1rem, 5vw, 1.5625rem); 
-    min-height: clamp(100px, 15vh, 160px);
+    padding: clamp(1.3rem, 5.5vw, 4rem) clamp(1rem, 5vw, 1.5625rem); 
+    min-height: clamp(95px, 13vh, 150px); 
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box; 
     display: flex;
