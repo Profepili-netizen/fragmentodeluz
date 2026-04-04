@@ -1,9 +1,8 @@
-
-/* 1. BASE */
+/*BASE */
 body {
     background-color: #0a0f18;
     font-family: 'Inter', sans-serif;
-    font-size: 1.0625rem; 
+    font-size: clamp(0.95rem, 2vw, 1.0625rem);
     line-height: 1.6;
     color: #f5f5f5;
     margin: 0;
@@ -17,7 +16,7 @@ body.got7 { --color-acento: #9fcac2; }
 body.shinee { --color-acento: #2FAE9E; }
 body.the-rose { --color-acento: #dcd4c5; }
 
-/* Header */
+/* HEADER */
 body.songs header {
     position: fixed; 
     top: 0;
@@ -26,8 +25,8 @@ body.songs header {
     z-index: 5000;
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
-    padding: 3.5rem 1.5625rem; 
-    min-height: 120px;
+    padding: clamp(1rem, 4vw, 3.5rem) clamp(1rem, 5vw, 1.5625rem); 
+    min-height: clamp(80px, 10vh, 120px);
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box; 
     display: flex;
@@ -45,10 +44,10 @@ body.songs header {
     text-decoration: none;
     border: 1px solid var(--color-acento);
     background: rgba(0,0,0,0.6);
-    padding: 0.5rem 0.8rem;
+    padding: clamp(0.4rem, 1.5vw, 0.5rem) clamp(0.6rem, 2vw, 0.8rem);
     border-radius: 0.75rem;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
     color: #fff;
     transition: background 0.3s, transform 0.2s;
 }
@@ -60,7 +59,7 @@ body.songs header {
 
 /* CONTENEDOR PRINCIPAL */
 main {
-    padding: 2.5rem 1.25rem;
+    padding: 2.5rem clamp(1rem, 5vw, 1.25rem);
     max-width: 50rem;
     margin: auto;
 }
@@ -68,28 +67,31 @@ main {
 .pagina-cancion {
     display: flex;
     flex-direction: column;
-    padding-top: 13rem;
     align-items: center; 
+    width: clamp(88%, 92%, 95%); 
     max-width: 55rem; 
     margin: 0 auto; 
+    padding-top: clamp(8rem, 20vh, 13rem); 
+    box-sizing: border-box;
 }
+
 .bloque-lectura {
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 2.1875rem;
+    padding: clamp(1.25rem, 5vw, 2.1875rem);
     border-radius: 1rem;
     border: 0.0625rem solid rgba(255, 255, 255, 0.1); 
     box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.25rem);
-    margin: 0 auto 3.125rem auto;
+    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
     width: 100%; 
     box-sizing: border-box;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
+    font-size: clamp(1.5rem, 5vw, 1.9rem);
     text-align: center;
-    margin-top: 6.5rem; 
+    margin-top: clamp(3rem, 10vw, 6.5rem); 
     margin-bottom: 1.8rem;
     letter-spacing: 0.025rem;
     color: var(--color-acento);
@@ -99,9 +101,10 @@ h2 {
 /* Separación de las secciónes */
 .interpretacion-cancion,
 .metainterpretacion-cancion {
-    margin-top: 10rem;
+    margin-top: clamp(4rem, 12vw, 10rem);
     padding-top: 3rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1)
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
 } 
 
 .pagina-cancion h2:first-of-type {
@@ -116,14 +119,13 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0.4rem; 
-    font-size: 1.25rem; 
     opacity: 0.85;
 }
 
 .datos-cancion li, 
 .tema-cancion p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.6;
     color: #f5f5f5;
     margin: 0;
@@ -133,19 +135,19 @@ h2 {
     color: var(--color-acento);
     font-weight: 600;
     margin-right: 0.5rem;
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 2.2vw, 1.25rem);
 }
 
 .tema-cancion {
     margin-top: 0.4rem;
     padding-top: 0;
-    border-top: none
+    border-top: none;
 }
 
 /* INTERPRETACIÓN (LETRA) */
 .bloque-interpretacion {
     margin-bottom: 3rem; 
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
     padding-left: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -154,12 +156,11 @@ h2 {
 .bloque-interpretacion h3 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
     font-weight: 400;
     color: var(--color-acento);
     margin: 0 !important; 
     line-height: 1.2;
-    letter-spacing: 0.01rem;
 }
 
 .bloque-interpretacion p {
@@ -169,12 +170,11 @@ h2 {
     margin: 0; 
     padding: 0;
     color: #f5f5f5;
-    font-size: 1.1rem; 
+    font-size: clamp(1rem, 2vw, 1.1rem); 
     line-height: 1.4;
 }
 
-
-/* MI VERSION (LETRA) */
+/* MI VERSION (LETRA) CON NOTA INTRO */
 .titulo-con-nota h2 {
     margin-bottom: 0 !important;
     line-height: 1.1;
@@ -183,7 +183,7 @@ h2 {
 .nota-intro {
     display: block; 
     font-family: 'Inter', sans-serif;
-    font-size: 0.65rem;
+    font-size: clamp(0.6rem, 1.5vw, 0.65rem);
     font-style: italic; 
     color: var(--color-acento);
     opacity: 0.7;
@@ -191,7 +191,6 @@ h2 {
     max-width: 80%;
     text-align: center;
     line-height: 1.5;
-    letter-spacing: 0.01rem;
     text-transform: lowercase;
 }
 
@@ -200,10 +199,11 @@ h2 {
     margin-bottom: 3rem;
 }
 
+/* METAINTERPRETACIÓN */
 .metainterpretacion-cancion h3 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
     font-weight: 400;
     color: var(--color-acento); 
     margin: 2.5rem 0 0 0 !important; 
@@ -211,7 +211,7 @@ h2 {
 
 .metainterpretacion-cancion p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.125rem; 
+    font-size: clamp(1rem, 2vw, 1.125rem); 
     line-height: 1.6;
     color: #f5f5f5; 
     margin-top: 0 !important; 
@@ -225,118 +225,23 @@ h2 {
     font-weight: 600; 
 }
 
-/* —— VOLVER AL ALBUM —— */
+/* NAVEGACIÓN INFERIOR */
 .lanzamiento-nav {
     margin: 20px 0 35px;
-    padding-left: 30px; 
+    padding-left: clamp(0rem, 5vw, 30px);
+    text-align: clamp(center, -100%, left);
 }
 
 .lanzamiento-nav a {
     text-decoration: none;
     color: #dcd4c5;
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    transition: color 0.3s, transform 0.2s;
 }
 
 .lanzamiento-nav a:hover {
-    transform: scale(1.1); 
+    transform: scale(1.05); 
     color: #ffe7b0;
 }
 
-/* RESPONSIVE */
-
-/* TABLETS (Menos de 1024px) */
-@media (max-width: 1024px) {
-    .pagina-cancion { padding-top: 11rem; }
-    h2 { margin-top: 5rem; }
-
-    .interpretacion-cancion, .metainterpretacion-cancion { margin-top: 7rem; }
-
-    .lanzamiento-nav {
-        margin: 3.5rem 0;
-        padding-left: 20px;
-    }
-
-    .lanzamiento-nav a {
-        font-size: 1.1rem;
-    }
-}
-
-/* CELULARES (Menos de 768px) */
-@media (max-width: 768px) {
-    body.songs header {
-        padding: 2rem 1.25rem;
-        min-height: 100px;
-    }
-    
-    .pagina-cancion { padding-top: 9rem; }
-    
-    h2 { 
-        font-size: 1.6rem; 
-        margin-top: 4rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .interpretacion-cancion, .metainterpretacion-cancion { 
-        margin-top: 5rem; 
-        padding-top: 2rem;
-    }
-
-    .bloque-lectura { padding: 1.5rem; }
-    
-    .datos-cancion li, .tema-cancion p, .metainterpretacion-cancion p {
-        font-size: 1.05rem; 
-    }
-
-    .bloque-interpretacion h3, .metainterpretacion-cancion h3 {
-        font-size: 1.15rem;
-    }
-
-        .lanzamiento-nav {
-        padding-left: 0;
-        text-align: center; /* Lo centramos para que sea el cierre visual */
-        margin: 3rem 0;
-    }
-    
-    .lanzamiento-nav a {
-        font-size: 1.1rem;
-        padding: 0.6rem 1.2rem;
-        /* Le damos un borde sutil para que parezca un botón táctil */
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 0.5rem;
-        background: rgba(255, 255, 255, 0.03);
-    }
-    
-    .lanzamiento-nav a:hover {
-        transform: scale(1.05);
-        background: rgba(255, 255, 255, 0.07);
-    }
-}
-
-/* CELULARES PEQUEÑOS (Menos de 480px) */
-@media (max-width: 480px) {
-    body.songs header {
-        min-height: 90px;
-        padding: 1.5rem 1rem;
-    }
-
-    header h1 { font-size: 1.5rem; } 
-
-    .pagina-cancion { padding-top: 8rem; }
-
-    .bloque-lectura { padding: 1.2rem; }
-
-    .datos-cancion strong { font-size: 1.05rem; }
-    
-    .nota-intro { max-width: 95%; font-size: 0.6rem; }
-
-    .lanzamiento-nav {
-        margin: 2.5rem 0 4rem;
-    }
-
-    .lanzamiento-nav a {
-        font-size: 1rem;
-        width: 80%; 
-        max-width: 280px;
-    }
-}
