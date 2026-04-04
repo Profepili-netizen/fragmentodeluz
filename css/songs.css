@@ -249,7 +249,17 @@ h2 {
 @media (max-width: 1024px) {
     .pagina-cancion { padding-top: 11rem; }
     h2 { margin-top: 5rem; }
+
     .interpretacion-cancion, .metainterpretacion-cancion { margin-top: 7rem; }
+
+    .lanzamiento-nav {
+        margin: 3.5rem 0;
+        padding-left: 20px;
+    }
+
+    .lanzamiento-nav a {
+        font-size: 1.1rem;
+    }
 }
 
 /* CELULARES (Menos de 768px) */
@@ -281,6 +291,26 @@ h2 {
     .bloque-interpretacion h3, .metainterpretacion-cancion h3 {
         font-size: 1.15rem;
     }
+
+        .lanzamiento-nav {
+        padding-left: 0;
+        text-align: center; /* Lo centramos para que sea el cierre visual */
+        margin: 3rem 0;
+    }
+    
+    .lanzamiento-nav a {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.2rem;
+        /* Le damos un borde sutil para que parezca un botón táctil */
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.03);
+    }
+    
+    .lanzamiento-nav a:hover {
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.07);
+    }
 }
 
 /* CELULARES PEQUEÑOS (Menos de 480px) */
@@ -290,7 +320,7 @@ h2 {
         padding: 1.5rem 1rem;
     }
 
-    header h1 { font-size: 1.5rem; } /* Achicamos el título del header */
+    header h1 { font-size: 1.5rem; } 
 
     .pagina-cancion { padding-top: 8rem; }
 
@@ -299,4 +329,14 @@ h2 {
     .datos-cancion strong { font-size: 1.05rem; }
     
     .nota-intro { max-width: 95%; font-size: 0.6rem; }
+
+    .lanzamiento-nav {
+        margin: 2.5rem 0 4rem;
+    }
+
+    .lanzamiento-nav a {
+        font-size: 1rem;
+        width: 80%; 
+        max-width: 280px;
+    }
 }
