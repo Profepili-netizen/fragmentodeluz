@@ -1,40 +1,42 @@
+/* ----------------------------- GLOBAL ----------------------------- */
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     margin: 0;
+    font-size: clamp(0.9rem, 2vw, 1.0625rem);
 }
 
-/* -----------------------------BOTONES FLOTANTES----------------------------- */
+/* ----------------------------- BOTONES FLOTANTES ----------------------------- */
 .header-linea {
     display: flex;
     justify-content: space-between; 
     align-items: center !important;  
     width: 100%;
-    padding: 1.5625rem;
+    padding: clamp(1rem, 3vw, 1.5625rem);
     box-sizing: border-box;
 }
 
 .top-buttons {
     position: relative;
-    gap: 1rem;
+    gap: clamp(0.5rem, 2vw, 1rem);
     align-items: center;
-    top: 1.125rem;
-    right: 1.25rem;
+    top: clamp(0.5rem, 2vw, 1.125rem);
+    right: clamp(0.5rem, 2vw, 1.25rem);
     display: flex;
     z-index: 4000;
 }
 
 .menu-boton {
-    width: 3rem;
-    height: 3rem;
+    width: clamp(2.5rem, 8vw, 3rem);
+    height: clamp(2.5rem, 8vw, 3rem);
     background: rgba(0,0,0,0.6);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.75rem;
     cursor: pointer;
-    font-size: 1.375rem;
+    font-size: clamp(1.1rem, 4vw, 1.375rem);
     font-weight: 700;
     color: #fff;
     transition: background 0.3s, transform 0.2s;
@@ -45,16 +47,16 @@ body {
     transform: scale(1.05);
 }
 
-/* -----------------------------MENÚ DESPLEGABLE----------------------------- */
+/* ----------------------------- MENÚ DESPLEGABLE ----------------------------- */
 .menu-desplegable {
     display: none;
     position: absolute;
-    top: var(--menu-top, 5.5rem); 
-    right: 1.5625rem;
+    top: var(--menu-top, clamp(4.5rem, 10vh, 5.5rem)); 
+    right: clamp(1rem, 3vw, 1.5625rem);
     background-color: rgba(0, 0, 0, 0.95);
     padding: 0.9375rem;
     border-radius: 0.625rem;
-    min-width: 12.5rem;
+    min-width: clamp(10rem, 40vw, 12.5rem);
     z-index: 1000;
     box-shadow: 0 0.125rem 0.5rem rgba(255,255,255,0.1);
     border: 0.065rem solid rgba(255, 248, 220, 0.1);
@@ -64,32 +66,21 @@ body {
     display: block;
 }
 
-.menu-desplegable ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .menu-desplegable li {
-    margin: 0.9375rem 0;
+    margin: clamp(0.6rem, 2vw, 0.9375rem) 0;
 }
 
 .menu-desplegable a {
     color: #f5f5f5;
     text-decoration: none;
     font-family: 'Lora', serif;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
     letter-spacing: 0.0625rem;
     display: inline-block;
     transition: color 0.25s ease, transform 0.2s ease;
 }
 
-.menu-desplegable a:hover {
-    color: #fff8dc;
-    transform: scale(1.06);
-}
-
-/* -----------------------------SUBMENÚ----------------------------- */
+/* ----------------------------- SUBMENÚ ----------------------------- */
 .submenu-lista {
     display: none;
     position: absolute;
@@ -98,30 +89,18 @@ body {
     background-color: rgba(0,0,0,0.9);
     border-radius: 0.75rem;    
     padding: 0.125rem 0.9375rem;
-    min-width: 11.25rem; 
+    min-width: clamp(9rem, 30vw, 11.25rem); 
     list-style: none;
     z-index: 50;
 }
 
-.submenu-lista.activo {
-    display: block;
-}
-
-/* Ocultar artistas */
-.submenu .artista {
-    display: none !important;
-}
-
-/* --- AJUSTE GLOBAL PARA PÁGINAS DE GRUPO/ALBUM --- */
-body.grupo {
-    --menu-top: 4rem; 
-}
-
+/* ----------------------------- CABECERAS (H1) ----------------------------- */
 body.grupo header, 
 body.album header {
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
-    padding: 2.5rem 1.5625rem;
+    /* Padding vertical del header: 1.5rem a 2.5rem */
+    padding: clamp(1.5rem, 5vw, 2.5rem) clamp(1rem, 4vw, 1.5625rem);
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     position: relative;
     z-index: 1;
@@ -131,42 +110,18 @@ body.grupo header h1,
 body.album header h1,
 body.songs header h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 8vw, 3rem);
     font-family: 'Playfair Display', serif;
     font-style: italic;
     color: #e5e2da;
-    line-height: 1; 
+    line-height: 1.1; 
 }
 
-body.grupo .header-linea, 
-body.album .header-linea,
-body.songs .header-linea {
-    align-items: center !important; 
-    padding: 0;
-}
-
-body.grupo .top-buttons, 
-body.album .top-buttons,
-body.songs .top-buttons {
-    position: relative;
-    top: 0; 
-    right: 0;
-    display: flex;
-}
-
-
-body.grupo .menu-desplegable, 
-body.album .menu-desplegable,
-body.songs .menu-desplegable {
-    top: 100%;
-    margin-top: 0.5rem;
-    right: 0 !important;
-}
-
-
+/* ----------------------------- LINKS (SUB-NAVEGACIÓN) ----------------------------- */
 body.grupo .links, 
 body.album .links {
     display: flex;
+    flex-wrap: wrap; 
     gap: 0.75rem;
     margin-top: 0.5rem;
 }
@@ -177,29 +132,17 @@ body.album .links a {
     font-style: italic;
     color: #ffe7b0;
     text-decoration: none;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
     position: relative;
     padding-right: 0.9rem;
-    line-height: 1;
+    line-height: 1.2;
 }
 
-body.grupo .links a:not(:last-child)::after, 
-body.album .links a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 70%;
-    width: 1px;
-    background-color: #ffe7b0;
-    opacity: 0.5;
-}
-
-/* -----------------------------FOOTER----------------------------- */ 
+/* ----------------------------- FOOTER ----------------------------- */ 
 footer {
     background-color: rgba(0,0,0,0.85);
-    padding: 1.25rem 0.625rem;
-    margin-top: 3.125rem;
+    padding: clamp(1rem, 4vw, 1.25rem) 0.625rem;
+    margin-top: clamp(2rem, 8vw, 3.125rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,170 +152,35 @@ footer {
 
 footer, footer * {
     font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
+    font-size: clamp(0.65rem, 2vw, 0.75rem);
     line-height: 1.4;
     text-align: center;
     color: #f0f0f0;
     margin: 0;
 }
 
-footer a {
-    text-decoration: none;
-    font-style: italic;
-    color: #f0f0f0;
-    transition: color 0.3s ease;
-}
-
-footer a:hover { 
-    text-decoration: underline; 
-    color: #f0f0f0
-} 
-
-/* -----------------------------COOKIES----------------------------- */ 
+/* ----------------------------- COOKIES ----------------------------- */ 
 .cookie-banner {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #2b2b2b;
-    padding: 0.875rem 1.25rem;    
+    padding: clamp(0.7rem, 3vw, 0.875rem) clamp(1rem, 4vw, 1.25rem);    
     display: none;
     box-shadow: 0 -0.1875rem 0.625rem rgba(0,0,0,0.3);
-    font-size: 0.95em;        
     z-index: 9999;
 }
 
-.cookie-banner .cookie-content {
-    max-width: 62.5rem;       
-    margin: 0 auto;
-}
-
 .cookie-banner p {
-    margin: 0 0 0.625rem 0;
+    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+    margin-bottom: 0.625rem;
     line-height: 1.45;
-    color: #e6e6e6;
-}
-
-.cookie-banner a {
-    color: #cfcfcf;
-    text-decoration: underline;
-}
-
-.cookie-banner a:hover {
-    color: #ffffff;
-}
-    
-.cookie-banner[role="dialog"] { 
-    outline: none; 
-} 
-.cookie-buttons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.75rem;
 }
 
 .cookie-buttons button {
-    font-size: 0.85em;
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
     padding: 0.375rem 0.875rem;
     border-radius: 0.375rem;
-    cursor: pointer;
-    background: transparent;
-    color: #f0f0f0;
-    border: 0.0625rem solid #777;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.cookie-buttons .cookie-accept {
-    border-color: #e6e6e6;
-    font-weight: 500;
-}
-
-.cookie-buttons .cookie-accept:hover {
-    background-color: rgba(255,255,255,0.1);
-}
-
-.cookie-buttons .cookie-reject {
-    opacity: 0.75;
-}
-
-.cookie-buttons .cookie-reject:hover {
-    opacity: 1;
-}
-
-/* AJUSTES RESPONSIVE */
-
-/* 1. TABLETS (Menos de 1024px) */
-@media (max-width: 1024px) {
-    body.grupo header h1, 
-    body.album header h1,
-    body.songs header h1 {
-        font-size: 2.4rem; 
-    }
-}
-
-/* 2. CELULARES (Menos de 768px) */
-@media (max-width: 768px) {
-    body.grupo header, 
-    body.album header,
-    body.songs header {
-        padding: 1.8rem 1.25rem;
-    }
-
-    body.grupo header h1, 
-    body.album header h1,
-    body.songs header h1 {
-        font-size: 1.7rem; 
-        max-width: 65%; 
-    }
-
-    .menu-boton {
-        width: 2rem;
-        height: 2rem;
-        font-size: 1rem;
-    }
-
-    .top-buttons {
-        gap: 0.7rem;
-    }
-
-    .menu-desplegable {
-        min-width: 11rem;
-        right: 1.25rem;
-        padding: 0.8rem;
-    }
-
-    .menu-desplegable a {
-        font-size: 1.1rem;
-    }
-}
-
-/* 3. CELULARES PEQUEÑOS (Menos de 480px) */
-@media (max-width: 480px) {
-    body.grupo header h1, 
-    body.album header h1,
-    body.songs header h1 {
-        font-size: 1.4rem; 
-    }
-
-    .header-linea {
-        padding: 0.5rem 0;
-    }
-
-    body.grupo .links, 
-    body.album .links {
-        gap: 0.5rem;
-    }
-    
-    body.grupo .links a, body.album .links a {
-        font-size: 0.85rem;
-    }
-
-    .cookie-buttons {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .cookie-buttons button {
-        width: 100%;
-    }
-}
