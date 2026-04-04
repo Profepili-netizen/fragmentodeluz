@@ -1,6 +1,6 @@
 /*BASE */
 body {
-    background-color: #0d1b2a;
+    background-color: #14213d;
     font-family: 'Inter', sans-serif;
     font-size: clamp(0.95rem, 2vw, 1.0625rem);
     line-height: 1.6;
@@ -25,8 +25,8 @@ body.songs header {
     z-index: 5000;
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
-    padding: clamp(1.2rem, 5vw, 4rem) clamp(1rem, 5vw, 1.5625rem); 
-    min-height: clamp(90px, 12vh, 140px);
+    padding: clamp(1.5rem, 6vw, 4.5rem) clamp(1rem, 5vw, 1.5625rem); 
+    min-height: clamp(100px, 15vh, 160px);
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box; 
     display: flex;
@@ -44,11 +44,9 @@ body.songs header {
     text-decoration: none;
     border: 1px solid var(--color-acento);
     background: rgba(0,0,0,0.6);
-    /* Ajustamos el padding para que la altura total se acerque a los 2.5rem del menú */
     padding: clamp(0.7rem, 2vw, 0.8rem) clamp(1rem, 3vw, 1.2rem);
     border-radius: 0.75rem;
     font-weight: 700;
-    /* Subimos el tamaño de fuente en móvil para equilibrar */
     font-size: clamp(0.95rem, 2vw, 1.1rem);
     color: #fff;
     transition: background 0.3s, transform 0.2s;
@@ -75,8 +73,7 @@ main {
     width: clamp(88%, 92%, 95%); 
     max-width: 55rem; 
     margin: 0 auto; 
-    /* Ajustamos el valor central para que no crezca tan rápido */
-    padding-top: clamp(8rem, 12vw, 13rem); 
+    padding-top: clamp(11rem, 18vw, 13rem);
     box-sizing: border-box;
 }
 
