@@ -70,8 +70,8 @@ h1 {
 
 .contenido {
     position: relative;
-    max-width: 50rem;
-    width: 100%; 
+    width: clamp(88%, 92%, 95%); 
+    max-width: 55rem; 
     box-sizing: border-box; 
     margin: clamp(1.5rem, 4vh, 1.875rem) auto clamp(2rem, 6vh, 3.125rem) auto;
     padding: clamp(1.25rem, 5vw, 2.1875rem);
