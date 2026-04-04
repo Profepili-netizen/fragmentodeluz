@@ -1,4 +1,4 @@
-/* -----------------------------RESET / BASE GENERAL----------------------------- */
+/* ----------------------------- RESET / BASE GENERAL ----------------------------- */
 body {
     margin: 0;
     padding: 0;
@@ -11,17 +11,10 @@ body {
     font-family: 'Inter', sans-serif;
     color: #f5f5f5;
     overflow-x: hidden;
+    font-size: clamp(0.9rem, 2vw, 1.0625rem);
 }
 
-@media (min-aspect-ratio: 16/9) {
-    body::before { background-position: center 55%; }
-}
-
-@media (max-aspect-ratio: 4/3) {
-    body::before { background-position: center 70%; }
-}
-
-/* -----------------------------CONTENEDOR CIELO----------------------------- */
+/* ----------------------------- CONTENEDOR CIELO ----------------------------- */
 .cielo {
     position: relative;
     width: 100%;
@@ -31,50 +24,46 @@ body {
 
 .site-header {
     position: relative;
-    height: 4.375rem;
+    /* Altura del header fluida */
+    height: clamp(3.5rem, 10vh, 4.375rem);
     z-index: 3000;
 }
 
 .site-header .header-linea {
     display: flex;
     justify-content: flex-end; 
-    padding-right: 1.5625rem;
+    padding-right: clamp(1rem, 5vw, 1.5625rem);
 }
 
 .site-header .top-buttons {
     position: static; 
-    margin-top: 1.125rem; 
+    margin-top: clamp(0.5rem, 2vh, 1.125rem); 
 }
 
-/* Ajuste de altura del menú desplegable solo en la Home */
 .site-header .menu-desplegable {
-    top: 3.5rem !important; /* Ajusta este número si lo querés aún más arriba */
-    right: 1.5625rem;       /* Mantiene la alineación lateral */
-    display: none;          /* Se mantiene oculto hasta que la clase .visible actúe */
+    top: clamp(3rem, 8vh, 3.5rem) !important; 
+    right: clamp(1rem, 5vw, 1.5625rem);
 }
 
-.site-header .menu-desplegable.visible {
-    display: block !important;
-}
-
-/* -----------------------------CONTENIDO PRINCIPAL----------------------------- */
+/* ----------------------------- CONTENIDO PRINCIPAL ----------------------------- */
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: clamp(2rem, 8vw, 3rem);
     text-align: center;
     color: #fff8dc;
     margin-top: 0; 
     margin-bottom: 0;
-    padding-top: 1.25rem;
+    padding-top: clamp(1rem, 5vh, 1.25rem);
     letter-spacing: 0.05rem;
 }
 
 .contenido {
     position: relative;
     max-width: 50rem;
-    width: 90%;
-    margin: 1.875rem auto 3.125rem auto;
-    padding: 1.5625rem 1.25rem 2.5rem 1.25rem;
+    width: clamp(88%, 92%, 90%);
+    /* Margen superior/inferior fluido */
+    margin: clamp(1.5rem, 5vh, 1.875rem) auto clamp(2.5rem, 8vh, 3.125rem) auto;
+    padding: clamp(1.25rem, 5vw, 2.5rem) clamp(1rem, 4vw, 1.25rem);
     background-color: rgba(0, 0, 0, 0.88);
     border: 0.0625rem solid rgba(255, 255, 255, 0.1);
     border-radius: 0.9375rem;
@@ -84,7 +73,7 @@ h1 {
 }
 
 .intro-proyecto h2 {
-    font-size: 1.35rem;
+    font-size: clamp(1.2rem, 4vw, 1.35rem);
     font-weight: 600;
     color: #fff8e6;
     margin-top: 0.75rem;
@@ -95,18 +84,13 @@ h1 {
 
 .contenido p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
     color: #f5f5f5;
     line-height: 1.6;
     hyphens: auto;
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 1.6rem;
-    text-indent: 0;
-}
-
-.intro-proyecto p:first-of-type {
-    text-indent: 0;
 }
 
 .intro-proyecto p:nth-of-type(n+2) {
@@ -114,23 +98,21 @@ h1 {
 }
 
 .guia-sitio h2 {
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 3.5vw, 1.25rem);
     font-weight: 600;
     color: #fff8e6;
-    margin-top: 3.125rem;
+    margin-top: clamp(2rem, 6vh, 3.125rem);
     margin-bottom: 0.625rem;
     font-family: 'Playfair Display', serif;
-    letter-spacing: 0.025rem;
 }
 
 .guia-sitio p {
-    font-size: 1rem;
+    font-size: clamp(0.95rem, 2vw, 1rem);
     font-weight: 500;
     line-height: 1.6;
     color: #f5f5f5;
     text-align: justify;
     margin-bottom: 1.5625rem;
     letter-spacing: 0.025rem;
-    text-indent: 0;
 }
 
