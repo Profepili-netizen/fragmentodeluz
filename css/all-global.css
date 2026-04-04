@@ -299,77 +299,50 @@ footer a:hover {
     opacity: 1;
 }
 
-/* MEDIA QUERIES GLOBALES */
+/* AJUSTES RESPONSIVE */
 
 /* 1. TABLETS (Menos de 1024px) */
 @media (max-width: 1024px) {
     body.grupo header h1, 
     body.album header h1,
     body.songs header h1 {
-        font-size: 2.5rem; 
-    }
-
-    .menu-desplegable {
-        min-width: 14rem; 
+        font-size: 2.4rem; 
     }
 }
 
 /* 2. CELULARES (Menos de 768px) */
 @media (max-width: 768px) {
     body.grupo header, 
-    body.album header {
-        padding: 1.5rem 1rem; 
+    body.album header,
+    body.songs header {
+        padding: 1.8rem 1.25rem;
     }
 
     body.grupo header h1, 
     body.album header h1,
     body.songs header h1 {
-        font-size: 1.8rem; 
-        max-width: 70%; 
-    }
-
-    /* Botones y Menú */
-    .top-buttons {
-        gap: 0.8rem;
+        font-size: 1.7rem; 
+        max-width: 65%; 
     }
 
     .menu-boton {
-        width: 2.8rem;
-        height: 2.8rem;
-        font-size: 1.2rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .top-buttons {
+        gap: 0.7rem;
     }
 
     .menu-desplegable {
-        position: fixed; 
-        top: 5rem;
-        right: 1rem;
-        left: 1rem; 
-        min-width: auto;
-        padding: 1.5rem;
+        min-width: 11rem;
+        right: 1.25rem;
+        padding: 0.8rem;
     }
 
     .menu-desplegable a {
-        font-size: 1.4rem; 
-        padding: 0.5rem 0;
-        display: block;
-        width: 100%;
-    }
-
-    /* Enlaces secundarios (links) */
-    body.grupo .links, 
-    body.album .links {
-        flex-wrap: wrap; 
-        gap: 0.5rem;
-    }
-
-    body.grupo .links a, 
-    body.album .links a {
-        font-size: 0.95rem;
-    }
-
-    /* Footer */
-    footer {
-        padding: 2rem 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -378,28 +351,28 @@ footer a:hover {
     body.grupo header h1, 
     body.album header h1,
     body.songs header h1 {
-        font-size: 1.4rem;
+        font-size: 1.4rem; 
     }
 
     .header-linea {
-        padding: 1rem;
+        padding: 0.5rem 0;
     }
 
-    .cookie-banner {
-        padding: 1rem;
+    body.grupo .links, 
+    body.album .links {
+        gap: 0.5rem;
     }
-
-    .cookie-banner p {
-        font-size: 0.8rem;
+    
+    body.grupo .links a, body.album .links a {
+        font-size: 0.85rem;
     }
 
     .cookie-buttons {
-        flex-direction: column; 
-        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
     }
-
+    
     .cookie-buttons button {
         width: 100%;
-        padding: 0.6rem;
     }
 }
