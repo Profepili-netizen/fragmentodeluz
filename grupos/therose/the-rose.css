@@ -94,7 +94,6 @@ strong {
 
 /* Contenedor principal */
 main {
-
     padding: 2.5rem clamp(1rem, 5vw, 1.25rem);
     max-width: 50rem;
     margin: auto;
@@ -105,11 +104,11 @@ main {
     background-color: rgba(20, 20, 20, 0.75);
     padding: clamp(1.25rem, 5vw, 2.1875rem);
     border-radius: 1rem;
-    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
-    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(0.25rem);
-    width: 100%;
-    box-sizing: border-box; 
+    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 /* Fondo */
@@ -152,7 +151,7 @@ body::before {
 .apoyo-kofi a {
     font-style: italic;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(220, 212, 197, 0.85);
 }
 
 .apoyo-kofi a:hover {

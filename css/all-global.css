@@ -113,7 +113,8 @@ body {
 }
 
 /* --- AJUSTE GLOBAL PARA PÁGINAS DE GRUPO/ALBUM --- */
-body.grupo {
+body.grupo, 
+bodi.album {
     --menu-top: clamp(3rem, 8vh, 4rem); 
 }
 
