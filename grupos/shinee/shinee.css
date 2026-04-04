@@ -1,7 +1,7 @@
 /* Tipografía base */
-body {
+body { 
     font-family: 'Inter', sans-serif;
-    font-size: 1.0625rem;
+    font-size: clamp(0.95rem, 2vw, 1.0625rem);
     line-height: 1.6;
     color: #f5f5f5;
     margin: 0;
@@ -18,17 +18,17 @@ h2, h3 {
 
 /* Títulos secundarios */
 h2 {
-    font-size: 1.9rem;
+    font-size: clamp(1.5rem, 5vw, 1.9rem);
     color: #2FAE9E;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: clamp(2rem, 6vh, 3rem);
     margin-bottom: 1.6rem;
     letter-spacing: 0.025rem;
 }
 
 /* Párrafos */
 p {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
     hyphens: auto;
     text-align: justify;
     text-justify: inter-word;
@@ -44,7 +44,7 @@ p {
     hyphens: auto;
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 3.8rem;
+    margin-bottom: clamp(2rem, 8vh, 3.8rem);
     color: #f5f5f5;
 }
 
@@ -70,7 +70,7 @@ p em, .narracion em {
 }
 
 .ficha-rapida {
-    margin-bottom: 3.75rem;
+    margin-bottom: clamp(2.5rem, 7vh, 3.75rem);
 }
 
 .recuadro > section ul li {
@@ -87,36 +87,38 @@ ul, li {
     padding-left: 0;
     margin-left: 0;
 }
+
 /* Destacados */
 strong {
-    color:#2FAE9E;
+    color: #2FAE9E;
     font-weight: 600;
 }
 
 /* Contenedor principal */
 main {
-    padding: 2.5rem 1.25rem;
+    padding: 2.5rem clamp(1rem, 5vw, 1.25rem);
     max-width: 50rem;
     margin: auto;
 }
 
+/* Recuadro narrativo */
 .recuadro {
     background-color: rgba(20, 20, 20, 0.75); 
-    padding: 2.1875rem 2.1875rem;
+    padding: clamp(1.25rem, 5vw, 2.1875rem);
     border-radius: 1rem;
     box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.35);
-    margin: 0 auto 3.125rem auto;
+    margin: 0 auto clamp(2rem, 8vw, 3.125rem) auto;
     backdrop-filter: blur(0.25rem);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Fondo */
 body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background-image: url("/img/shinee/shinee-bg-desktop.webp");
     background-size: cover;
     background-position: center;
@@ -137,24 +139,8 @@ body::before {
 
 /* Ko-fi */
 .apoyo-kofi {
-  text-align: center;
-  margin-top: 2.5rem 0;
-  margin-bottom: 0.75rem;
-}
-
-.apoyo-kofi p {
-  font-size: 0.95em;
-  line-height: 1.6;
-}
-
-.apoyo-kofi a {
-  font-style: italic;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.85); 
-}
-
-.apoyo-kofi a:hover {
-  opacity: 0.7;
+    text-align: center;
+    margin: clamp(1.5rem, 5vh, 2.5rem) 0 0.75rem 0;
 }
 
 /* ——— DISCOGRAFÍA ——— */
@@ -162,37 +148,15 @@ body::before {
     padding-left: 0;
     text-align: center;
     margin: 1.25rem auto;
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
     max-width: 50rem;
     font-family: 'Playfair Display', serif;
     color: #f0eee5;
 }
 
-.discografia li {
-    margin: 0.75rem 0;
-}
-
-.discografia a {
-    display: block;
-    text-decoration: none;
-    color: #f0eee5;
-    font-style: italic;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-/* Texto sin enlace (pero con apariencia coherente) */
-.discografia .no-link {
-    display: block;
-    font-style: italic;
-    color: #f0eee5;
-    cursor: default;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-/* Efecto hover usado tanto para enlaces como no-links */
 .discografia a:hover,
 .discografia .no-link:hover {
-    transform: scale(1.12);
+    transform: scale(1.08); /* Consistente con The Rose */
     color: #fff8dc;
 }
 
@@ -201,10 +165,8 @@ body::before {
     width: 100%;
     background: none;
     border: none;
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
     font-family: 'Playfair Display', serif; 
-    font-weight: normal;
     letter-spacing: 0.025rem; 
     color: #fff8dc;
     cursor: pointer;
@@ -213,7 +175,7 @@ body::before {
 }
 
 .discografia .anio > .toggle:hover {
-    transform: scale(1.06);
+    transform: scale(1.05);
     color: #ffffff;
 }
 
@@ -225,8 +187,4 @@ body::before {
 
 .discografia .sublista.abierto {
     display: block;
-}
-
-.discografia .sublista li {
-    margin: 0.5rem 0;
 }

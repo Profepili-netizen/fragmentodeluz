@@ -31,7 +31,6 @@ body {
 
 .site-header {
     position: relative;
-    /* Altura fluida para el header de la home */
     height: clamp(3.8rem, 8vh, 4.375rem);
     z-index: 3000;
 }
@@ -47,9 +46,7 @@ body {
     margin-top: clamp(0.8rem, 2.5vh, 1.125rem); 
 }
 
-/* Ajuste de altura del menú desplegable: bajado para que no tape el botón */
 .site-header .menu-desplegable {
-    /* De 4.5rem en móvil a 5rem en desktop para dar más aire */
     top: clamp(4.5rem, 9vh, 5rem) !important; 
     right: clamp(1rem, 5vw, 1.5625rem);
     display: none;
@@ -62,7 +59,6 @@ body {
 /* -----------------------------CONTENIDO PRINCIPAL----------------------------- */
 h1 {
     font-family: 'Playfair Display', serif;
-    /* Título fluido: de 2.2rem a 3rem */
     font-size: clamp(2.2rem, 8vw, 3rem);
     text-align: center;
     color: #fff8dc;
@@ -75,22 +71,21 @@ h1 {
 .contenido {
     position: relative;
     max-width: 50rem;
-    /* Ancho adaptativo para dejar ver el fondo */
-    width: clamp(88%, 90%, 92%);
-    /* Margen superior/inferior fluido */
+    width: 100%; 
+    box-sizing: border-box; 
     margin: clamp(1.5rem, 4vh, 1.875rem) auto clamp(2rem, 6vh, 3.125rem) auto;
-    /* Padding interno fluido */
-    padding: clamp(1.2rem, 4vw, 1.5625rem) clamp(1rem, 3vw, 1.25rem) clamp(2rem, 5vw, 2.5rem);
+    padding: clamp(1.25rem, 5vw, 2.1875rem);
     background-color: rgba(0, 0, 0, 0.88);
     border: 0.0625rem solid rgba(255, 255, 255, 0.1);
     border-radius: 0.9375rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.25rem);
     color: #f5f5f5;
     line-height: 1.8;
     z-index: 10;
 }
 
 .intro-proyecto h2 {
-    /* Subtítulos: de 1.15rem a 1.35rem */
     font-size: clamp(1.15rem, 3vw, 1.35rem);
     font-weight: 600;
     color: #fff8e6;
@@ -102,7 +97,6 @@ h1 {
 
 .contenido p {
     font-family: 'Inter', sans-serif;
-    /* Párrafos: de 1rem a 1.125rem */
     font-size: clamp(1rem, 2.2vw, 1.125rem);
     color: #f5f5f5;
     line-height: 1.6;
@@ -118,11 +112,9 @@ h1 {
 }
 
 .guia-sitio h2 {
-    /* De 1.1rem a 1.25rem */
     font-size: clamp(1.1rem, 3vw, 1.25rem);
     font-weight: 600;
     color: #fff8e6;
-    /* Margen superior fluido */
     margin-top: clamp(2rem, 6vh, 3.125rem);
     margin-bottom: 0.625rem;
     font-family: 'Playfair Display', serif;
@@ -130,7 +122,6 @@ h1 {
 }
 
 .guia-sitio p {
-    /* De 0.95rem a 1rem */
     font-size: clamp(0.95rem, 2vw, 1rem);
     font-weight: 500;
     line-height: 1.6;
