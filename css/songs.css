@@ -44,15 +44,16 @@ body.songs header {
     text-decoration: none;
     border: 1px solid var(--color-acento);
     background: rgba(0,0,0,0.6);
-    padding: clamp(0.5rem, 1.5vw, 0.6rem) clamp(0.9rem, 2.5vw, 1.1rem); 
+    padding: clamp(0.35rem, 1.5vw, 0.6rem) clamp(0.7rem, 2.5vw, 1.1rem); 
     border-radius: 0.75rem;
     font-weight: 600; 
-    font-size: clamp(0.85rem, 1.8vw, 0.95rem); 
+    font-size: clamp(0.75rem, 1.8vw, 0.95rem); 
     color: #fff;
     transition: background 0.3s, transform 0.2s;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    line-height: 1; 
 }
 
 .kofi-boton:hover {
