@@ -26,7 +26,7 @@ body.songs header {
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
     padding: clamp(0.8rem, 3vw, 1.8rem) clamp(1rem, 5vw, 1.5625rem); 
-    min-height: clamp(70px, 10vh, 90px); 
+    min-height: clamp(95px, 13vh, 150px); 
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box; 
     display: flex;
@@ -85,7 +85,7 @@ main {
     width: clamp(88%, 92%, 95%); 
     max-width: 55rem; 
     margin: 0 auto; 
-    padding-top: clamp(6.5rem, 12vw, 13rem);
+    padding-top: clamp(11rem, 18vw, 13rem);
     box-sizing: border-box;
 }
 
