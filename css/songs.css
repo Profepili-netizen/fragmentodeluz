@@ -25,8 +25,8 @@ body.songs header {
     z-index: 5000;
     background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(0.125rem);
-    padding: clamp(1.3rem, 5.5vw, 4rem) clamp(1rem, 5vw, 1.5625rem); 
-    min-height: clamp(95px, 13vh, 150px); 
+    padding: clamp(0.8rem, 3vw, 1.8rem) clamp(1rem, 5vw, 1.5625rem); 
+    min-height: clamp(70px, 10vh, 90px); 
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box; 
     display: flex;
@@ -40,7 +40,6 @@ body.songs header {
 }
 
 .kofi-boton {
-
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     border: 1px solid var(--color-acento);
@@ -55,6 +54,12 @@ body.songs header {
     align-items: center;
     gap: 0.5rem;
 }
+
+@media (max-width: 480px) {
+    .kofi-boton {
+        padding: 0.35rem 0.7rem; 
+        font-size: 0.8rem;
+    }
 
 .kofi-boton:hover {
     background: rgba(0,0,0,0.8);
@@ -80,7 +85,7 @@ main {
     width: clamp(88%, 92%, 95%); 
     max-width: 55rem; 
     margin: 0 auto; 
-    padding-top: clamp(11rem, 18vw, 13rem);
+    padding-top: clamp(6.5rem, 12vw 13rem);
     box-sizing: border-box;
 }
 
@@ -254,4 +259,6 @@ h2 {
 .lanzamiento-nav a:hover {
     transform: scale(1.05); 
     color: #ffe7b0;
+}
+
 }
