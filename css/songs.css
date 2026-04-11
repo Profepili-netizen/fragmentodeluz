@@ -60,6 +60,7 @@ body.songs header {
         padding: 0.35rem 0.7rem; 
         font-size: 0.8rem;
     }
+}
 
 .kofi-boton:hover {
     background: rgba(0,0,0,0.8);
