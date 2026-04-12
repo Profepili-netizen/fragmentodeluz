@@ -33,6 +33,13 @@ body.songs header {
     align-items: center;
 }
 
+@media (min-width: 1024px) {
+    body.songs header {
+        min-height: 180px; /* Aumentamos de los 150px máximos que tenías */
+        padding: 2.5rem clamp(1rem, 5vw, 1.5625rem); /* Más aire arriba y abajo */
+    }
+}
+
 .top-buttons {
     display: flex;
     align-items: center;
@@ -86,7 +93,7 @@ main {
     width: clamp(88%, 92%, 95%); 
     max-width: 55rem; 
     margin: 0 auto; 
-    padding-top: clamp(11rem, 18vw, 13rem);
+    padding-top: clamp(8rem, 15vw, 11rem);
     box-sizing: border-box;
 }
 
