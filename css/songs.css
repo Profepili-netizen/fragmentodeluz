@@ -93,7 +93,7 @@ main {
     width: clamp(88%, 92%, 95%); 
     max-width: 55rem; 
     margin: 0 auto; 
-    padding-top: clamp(8rem, 15vw, 11rem);
+    padding-top: clamp(10rem, 16vw, 13rem);
     box-sizing: border-box;
 }
 
