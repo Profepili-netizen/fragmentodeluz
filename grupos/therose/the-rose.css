@@ -167,11 +167,15 @@ body::before {
 .apoyo-kofi {
     text-align: center;
     margin: clamp(1.5rem, 5vh, 2.5rem) 0;
+    max-width: 50rem;           
+    padding: 0 1rem;  
 }
 
 .apoyo-kofi p {
     font-size: 0.95em;
     line-height: 1.6;
+    margin: 0; 
+    display: inline-block;
 }
 
 .apoyo-kofi a {
