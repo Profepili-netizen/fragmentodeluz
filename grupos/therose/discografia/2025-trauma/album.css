@@ -200,3 +200,21 @@ body::before {
     transform: scale(1.05); 
     color: #ffe7b0;
 }
+
+/* —— CORRECCIÓN EXCLUSIVA PARA PÁGINA ALBUM —— */
+body.album .top-buttons {
+    position: relative !important;
+    display: flex !important;
+    width: fit-content !important; 
+    margin-left: auto !important;
+}
+
+@media (min-width: 1024px) {
+    body.album .menu-desplegable {
+        position: absolute !important;
+        right: 0 !important; 
+        top: 100% !important; 
+        margin-top: 0.5rem !important;
+        left: auto !important;
+    }
+}
