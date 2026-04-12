@@ -213,15 +213,16 @@ h2 {
 .nota-intro {
     display: block; 
     font-family: 'Inter', sans-serif;
-    font-size: clamp(0.55rem, 1.2vw, 0.6rem);
+    font-size: clamp(0.5rem, 1vw, 0.75rem);
     font-style: italic; 
     color: var(--color-acento);
     opacity: 0.5;
     margin: 0.8rem auto 0;
     max-width: 80%;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.2;
     text-transform: lowercase;
+    letter-spacing: 0.02rem;
 }
 
 .titulo-con-nota {
