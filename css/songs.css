@@ -152,7 +152,9 @@ h2 {
     line-height: 1.6;
     color: #f5f5f5;
     margin: 0;
+    margin-bottom: 1.2rem;
 }
+
 
 .datos-cancion strong {
     color: var(--color-acento);
@@ -166,6 +168,10 @@ h2 {
     margin-top: 0.4rem;
     padding-top: 0;
     border-top: none;
+}
+
+.tema-cancion p:last-child {
+    margin-bottom: 0;
 }
 
 /* INTERPRETACIÓN (LETRA) */
