@@ -132,3 +132,15 @@ h1 {
     text-indent: 0;
 }
 
+/* Ajuste solo para Pantallas Grandes  */
+@media (min-width: 1024px) {
+    .site-header .top-buttons {
+        position: relative; 
+    }
+
+    .site-header .menu-desplegable {
+        top: calc(100% + 0.5rem) !important; 
+        right: 0; 
+        transform: none; 
+    }
+}
